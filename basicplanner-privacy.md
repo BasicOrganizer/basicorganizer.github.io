@@ -31,7 +31,7 @@ This information is stored in a local SQLite database and the app's private pref
 
 The app does not require an account and does not send your personal calendar content over the internet. The app uses the network only as follows:
 
-- **Public Holidays (optional):** If you select a country in Settings, the app downloads public holiday dates and names for that **country code and year** from a third-party public-holiday API (Nager.Date). The request contains **only the country code and year** — never your events, tasks, notes, or any account information. If you do not select a country, no such request is made.
+- **Public Holidays (optional):** If you select a country in Settings, the app downloads public holiday dates and names for that **country code and year** from a third-party public-holiday API (Nager.Date). The request contains **only the country code and year** — never your events, tasks, notes, or any account information. If you do not select a country, no such request is made. As with any internet request, your network connection may reveal your **IP address** to the third-party service while the request is in transit; this is a normal property of how the internet works and is not used to identify you within the app.
 - **Report a Bug:** This option opens your email app with a pre-filled message addressed to the developer. Anything you choose to send is handled by your email provider; we receive only what you send.
 - **More Apps / Get Organized:** Opens the Google Play Store. Google's policies apply to that experience.
 
@@ -98,6 +98,7 @@ No method of electronic storage or transmission is 100% secure, and we cannot gu
 - Change app preferences (including the holiday country) in Settings at any time.
 - Opt-out of any optional features when they are implemented.
 - EEA/Norwegian users have rights under GDPR (access, rectification, erasure, portability, objection, complaint).
+- Users in the European Economic Area (including Norway) who believe their personal data has been handled in a way that does not comply with applicable law may **lodge a complaint with their local data protection supervisory authority**. In Norway this is **Datatilsynet** (https://www.datatilsynet.no).
 
 ### Right to Erasure ("Right to be Forgotten")
 
