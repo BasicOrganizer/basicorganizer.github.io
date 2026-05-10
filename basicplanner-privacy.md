@@ -9,7 +9,9 @@ This Privacy Policy explains how Basic Planner ("we", "our", or "the app") colle
 ## Developer Information
 
 **App Name:** Basic Planner (listed on Google Play as "Planner")
+
 **Developer:** Basic Organizer
+
 **Contact Email:** basicorganizer.post@gmail.com
 
 **Note:** This app is developed and maintained as an independent project. While we strive to provide reliable service and support, response times and feature development may vary based on available resources.
