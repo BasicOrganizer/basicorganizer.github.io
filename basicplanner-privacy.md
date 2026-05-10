@@ -1,162 +1,168 @@
- Privacy Policy for Planner (Basic Planner)
+# Privacy Policy for Basic Planner
 
 **Last Updated: May 10, 2026**
 
 ## Introduction
 
-This Privacy Policy describes how **Planner** (“Basic Planner”, “we”, “our”, or “the app”) handles information when you use our mobile application. We aim to be transparent and to align with common expectations for privacy on Google Play and under laws such as the GDPR (including Norway) and, where applicable, the CCPA.
-
-**This policy is provided for your convenience and does not constitute legal advice.** If you need legal advice, consult a qualified professional.
-
----
+This Privacy Policy explains how Basic Planner ("we", "our", or "the app") collects, uses, and protects information when you use our mobile application. We are committed to protecting your privacy and being transparent about our data practices.
 
 ## Developer Information
 
-| | |
-|---|---|
-| **App name** | Planner (listed as Basic Planner where the full name is shown) |
-| **Developer** | Basic Organizer |
-| **Contact email** | basicorganizer.post@gmail.com |
+**App Name:** Basic Planner (listed on Google Play as "Planner")
+**Developer:** Basic Organizer
+**Contact Email:** basicorganizer.post@gmail.com
 
-This app is developed and maintained as an independent project. Support response times may vary.
+**Note:** This app is developed and maintained as an independent project. While we strive to provide reliable service and support, response times and feature development may vary based on available resources.
 
----
+## Information We Collect
 
-## Summary (quick read)
+### Data Stored Locally
 
-- Your **calendar content** (events, tasks, notes, special dates you enter) is stored **on your device** (SQLite + app preferences), not on our servers.
-- The app **does not** include advertising SDKs or analytics SDKs in the current version.
-- **Optional internet use:** if you choose a **country for public holidays** in Settings, the app may download **public holiday lists** for that country/year from a third-party API. Your personal entries are **not** uploaded with that request.
-- **Report a bug** opens your email app; anything you send is between you and your email provider.
-- **Get organized / More apps** opens the Google Play Store (Google’s policies apply there).
+All user data you create in the app is stored **locally on your device**:
 
----
+- **Events:** Titles, notes, dates, start and end times, recurrence settings, and color choice.
+- **To-dos / Tasks:** Titles, dates, scope (day/week/month/year), completion status, importance flag, and ordering.
+- **Special Dates:** Birthdays and yearly or one-time occasions you add.
+- **App Preferences:** Display settings such as date format, time format, first day of week, completed-task behavior, and selected country for public holidays.
 
-## Information We Collect and Store
+This information is stored in a local SQLite database and the app's private preferences. It is **not transmitted to any servers operated by us**.
 
-### Data stored locally on your device
+### Limited Internet Use
 
-All primary user content stays **on your device**, in app-private storage:
+The app does not require an account and does not send your personal calendar content over the internet. The app uses the network only as follows:
 
-**SQLite database (`PlannerDB`):**
+- **Public Holidays (optional):** If you select a country in Settings, the app downloads public holiday dates and names for that **country code and year** from a third-party public-holiday API (Nager.Date). The request contains **only the country code and year** — never your events, tasks, notes, or any account information. If you do not select a country, no such request is made.
+- **Report a Bug:** This option opens your email app with a pre-filled message addressed to the developer. Anything you choose to send is handled by your email provider; we receive only what you send.
+- **More Apps / Get Organized:** Opens the Google Play Store. Google's policies apply to that experience.
 
-- **Events:** titles, notes, dates, start/end times, recurrence settings, colour choice, and related fields needed to show your calendar.
-- **To-dos / tasks:** titles, dates, scope (day/week/month/year), completion status, optional move-to-next behaviour, sort order, and related fields.
+### Third-Party Services
 
-**Shared preferences (app settings), including:**
+Currently, the app does **not** use advertisements, analytics SDKs, or cloud storage. In the future, optional features **may** be introduced:
 
-- Display preferences (e.g. date format, time format, first day of week, completed-task behaviour).
-- **Country for public holidays** (ISO country code used only to request public holiday data—see below).
-- **Special dates / occasions** you add (e.g. birthdays and similar entries stored as structured data in preferences).
+- **Advertisements:** Device and usage information may be collected by third-party ad networks. Calendar content, tasks, and notes will **never** be shared.
+- **Analytics:** Anonymous usage statistics may be collected to improve app performance.
+- **Cloud Storage & Sync:** Optional backup and synchronization between devices. Requires explicit opt-in.
+- **Cross-App Integration:** Optional sharing of data between authorized apps. Requires explicit consent.
 
-We **do not** operate our own backend that receives this content in the normal operation of the app.
+All future features will be clearly disclosed in app updates or within the app interface, and users will have the option to **opt-in or opt-out**.
 
-### Data transmitted over the internet (limited)
+### Data We Do Not Collect
 
-**Public holidays (optional)**
+We do not directly collect or store:
 
-- If you select a **country for public holidays** in Settings, the app may request data from **Nager.Date** (`date.nager.at`), a public API that returns **public holiday dates and names** for the selected **calendar year** and **country code**.
-- The request needs **only** the year and country—not your events, tasks, notes, or account information.
-- Holiday results may be **cached in memory** on your device to reduce repeat requests.
-- If you choose **no country**, this fetch is not used for that purpose.
-
-**Other links that leave the app**
-
-- **Report a bug:** Opens your installed email app with a `mailto:` link to **basicorganizer.post@gmail.com**. Any message, attachments, or metadata are handled by **your email provider** and your chosen email app—we only receive what you choose to send.
-- **More apps / Play Store:** Opens Google Play (app or browser). **Google’s** privacy policy and terms apply to that experience.
-
-We do **not** sell your personal information.
+- Event titles, task content, notes, or special dates on external servers
+- Personal identification information (name, email, phone)
+- Precise location data
+- Contact information
+- Photos, media, or data from other apps
 
 ---
 
-## Data we do not collect (in the app as built)
+## How We Use Your Information
 
-The current app version does **not**:
-
-- Send your events, tasks, or notes to our servers (we do not host such a service for this app).
-- Use in-app **advertising** or **analytics** SDKs as part of the distributed build described here.
-- Request **precise location** or **contacts**.
-- Access **photos** or **files** outside what the system provides for normal app storage.
+- Events, tasks, notes, special dates, and app preferences remain **local to your device**.
+- The optional public-holiday lookup is used **only** to display public holidays in the calendar for the country and year you chose.
+- No content is shared or used for advertising or analytics unless you explicitly opt-in to future features.
 
 ---
 
-## How we use information
+## Data Security
 
-- Local data is used **only** to provide planner features (calendar views, reminders of what you entered, settings you chose).
-- Optional holiday data is used **only** to show public holidays for the country/year you selected.
+- **Local Storage:** All planner data is stored in a local SQLite database in app-private storage.
+- **No Automatic Backup:** The app disables automatic cloud backup (`android:allowBackup="false"`).
+- **Device Security:** Data security depends on your device's security features (screen lock, encryption, OS updates, etc.).
 
----
-
-## Legal bases (EEA / Norway – GDPR)
-
-Where the GDPR applies, we rely primarily on:
-
-- **Performance of the service / legitimate interests** in running a local planner and optional non-sensitive holiday lookup you trigger by settings.
-
-You may **withdraw consent** for optional behaviour where consent applies by disabling the related setting (e.g. clearing the holidays country) or uninstalling the app.
+No method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.
 
 ---
 
-## Retention and deletion
+## Children's Privacy
 
-- You can **delete or edit** events, tasks, and special-date entries within the app subject to the features provided.
-- **Uninstalling** the app removes locally stored app data from your device under normal Android behaviour (subject to your device manufacturer and backup settings).
-- **Automatic cloud backup** is disabled for this app in its manifest (`allowBackup` is `false`), which avoids Android’s default backup of app data to Google’s backup infrastructure for this app—**device policies and manufacturer behaviour may still vary**.
-
----
-
-## Security
-
-- Data stays in **app-private storage** on the device; other apps cannot read it without system-level access or a compromised device.
-- Security also depends on **your device** (screen lock, OS updates, malware avoidance).
-
-No method of storage or transmission is 100% secure.
+- The app is suitable for all ages.
+- The app does not knowingly collect personal information from children under 13.
+- Any future ads will comply with child-safe standards and COPPA.
 
 ---
 
-## Children’s privacy
+## Data Retention and Deletion
 
-The app is a general-purpose planner. We do not knowingly market it solely to children or seek personal information from children. If you believe a child has provided information to us by email, contact us and we will address it reasonably.
-
----
-
-## International users & rights
-
-Depending on where you live, you may have rights to **access**, **rectify**, **erase**, **restrict processing**, **object**, or **data portability**, and to **lodge a complaint** with a supervisory authority.
-
-Because most data is **local to your device**, you can often exercise control directly in the app or by uninstalling. For privacy requests sent by email, we will respond within reasonable timelines; **EEA users** may receive a reply within **30 days** where the GDPR requires it, with possible extension for complex requests.
+- You can delete individual events, tasks, and special dates at any time within the app.
+- Uninstalling the app removes all locally stored app data.
+- No server-side storage of your calendar content exists at this time.
 
 ---
 
-## Third-party services you should read about
+## User Rights
 
-- **Nager.Date** – public holiday API provider; see their terms and privacy policy if you use holiday lookup.
-- **Google Play / Google** – when you open Play from the app or install updates.
-- **Your email provider** – when you send a bug report.
+- Access, modify, and delete your events, tasks, and special dates at any time within the app.
+- Change app preferences (including the holiday country) in Settings at any time.
+- Opt-out of any optional features when they are implemented.
+- EEA/Norwegian users have rights under GDPR (access, rectification, erasure, portability, objection, complaint).
+
+### Right to Erasure ("Right to be Forgotten")
+
+- You can delete individual events, tasks, or special dates within the app.
+- You can uninstall the app to remove all local data.
+- You can contact us to request assistance with deletion of any data that may be held by third-party services (such as a future advertising network), though we have limited control over third-party data.
 
 ---
 
-## Changes to this policy
+## Changes to This Privacy Policy
 
-We may update this policy from time to time. The **Last Updated** date will change. Significant changes may be noted in the Play Store listing or app description where practical.
+- Updates will be reflected by the "Last Updated" date.
+- Users will be informed of material changes via app updates or in-app notifications.
+- Continued use of the app after changes constitutes acceptance.
 
 ---
 
-## Contact
+## Legal Compliance
 
-**Email:** basicorganizer.post@gmail.com  
+This policy is designed to comply with:
+
+- **GDPR (EEA / Norway)**
+- **CCPA (California, USA)**
+- **COPPA (Children)**
+- **Google Play Developer policies**
+
+Optional features added in the future will also comply with applicable laws.
+
+---
+
+## Contact Us
+
+**Email:** basicorganizer.post@gmail.com
 **Developer:** Basic Organizer
 
-When contacting us, please describe your request clearly. If you are in the EEA/Norway and invoke GDPR rights, mention that so we can route your request appropriately.
+**Response Time:**
+We will make reasonable efforts to respond to inquiries in a timely manner. For users in the European Economic Area (EEA), including Norway, we will respond to GDPR-related requests within 30 days as required by law, and may extend this period by an additional two months where necessary, taking into account the complexity and number of requests.
+
+For other inquiries, we aim to respond as quickly as possible, but response times may vary.
+
+When contacting us, please include:
+
+- Your concern or request
+- Your location (to ensure we apply the correct privacy laws)
+- Any relevant details to help us assist you
 
 ---
 
 ## Disclaimer
 
-The app is provided **“as is”**. We strive to describe data practices accurately but cannot guarantee that every future device or OS behaviour is captured here. This policy is not a contract.
-
----
+The app is provided **"as is"** and **"as available"** without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. While we make reasonable efforts to protect your data and to comply with applicable privacy laws, we cannot guarantee uninterrupted service, error-free operation, or absolute security. To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of the app. You are responsible for maintaining appropriate device security measures and for backing up any data you consider important.
 
 ## Consent
 
-By using Planner (Basic Planner), you acknowledge this Privacy Policy. If you do not agree, please do not use the app.
+By using Basic Planner, you consent to this Privacy Policy. If you do not agree, please do not use the app.
+
+---
+
+**Summary:**
+
+- ✓ Calendar data stored locally only
+- ✓ No personal content sent to our servers
+- ✓ Optional public-holiday lookup uses only country code and year
+- ✓ Currently no ads or analytics
+- ✓ Optional future features require user consent
+- ✓ Users have full control over their data
+- ✓ Automatic cloud backup disabled
+- ✓ Legal compliance with GDPR, CCPA, COPPA, and Google Play
