@@ -1,6 +1,6 @@
 # Privacy Policy for Basic Notes
 
-**Last Updated: December 27, 2025**
+**Last Updated: May 15, 2026**
 
 ## Introduction
 
@@ -23,7 +23,8 @@ All user data is stored **locally on your device**:
 - **Note Content:** Text content of your notes
 - **Note Titles:** Titles of your notes
 - **Timestamps:** Creation and last modified dates
-- **App Preferences:** Settings, scroll position, and preferences
+- **Trash:** Notes moved to Trash are retained locally for up to 30 days before permanent deletion
+- **App Preferences:** Settings, including language, sort order, and scroll position
 
 This information is stored in a local SQLite database and is **not transmitted to any external servers or third parties**.
 
@@ -53,7 +54,8 @@ We do not directly collect or store:
 ## How We Use Your Information
 
 - Notes and app data remain **local to your device**.
-- No note content is shared or used for advertising or analytics unless you explicitly opt-in to future features.
+- No note content is shared or used for advertising or analytics unless users explicitly opt-in to future features.
+- When users use Share or Export, note content may be sent only to applications or file locations selected by the user; the developer does not collect or receive that data.
 
 ---
 
@@ -76,6 +78,7 @@ We do not directly collect or store:
 ## Data Retention and Deletion
 
 - Users can delete individual notes or all notes at any time.
+- Notes in Trash are permanently deleted after 30 days unless restored or emptied sooner.
 - Uninstalling the app removes all locally stored data.
 - No server-side storage exists at this time.
 
@@ -144,7 +147,7 @@ By using Basic Notes, you consent to this Privacy Policy. If you do not agree, p
 
 **Summary:**
 - ✓ Notes stored locally only
-- ✓ No note content shared
+- ✓ No note content shared with the developer
 - ✓ Currently no ads or analytics
 - ✓ Optional future features require user consent
 - ✓ Users have full control over their data
