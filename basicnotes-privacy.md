@@ -75,14 +75,7 @@ Choosing a backup folder or exporting a file uses Android’s system file picker
 
 Currently, the app contains **no advertising, no analytics, no trackers, no crash-reporting service, and no user accounts**. The libraries it uses (AndroidX and Google Material components) provide user-interface and scheduling functions and do not collect your data.
 
-Optional features **may** be introduced later:
-
-- **Advertisements:** Device and usage information may be collected by third-party ad networks. Note content will **never** be shared.
-- **Analytics:** Anonymous usage statistics may be collected to improve app performance.
-- **Account-based cloud sync:** Optional synchronization that requires signing in. Requires explicit opt-in.
-- **Cross-App Integration:** Optional sharing of data between authorized apps. Requires explicit consent.
-
-All future features will be clearly disclosed in app updates or within the app interface, and users will have the option to **opt-in or opt-out**.
+If this ever changes, we will update this policy and the app’s Data safety information on Google Play before the change is released, and ask for your consent where the law requires it.
 
 ### Data We Do Not Collect
 
@@ -120,9 +113,10 @@ We operate no servers, and the app never transmits data to us by itself. We do n
 
 ## Children’s Privacy
 
-- App is suitable for all ages.
-- Does not knowingly collect personal information from children under 13.
-- Any future ads will comply with child-safe standards and COPPA.
+- Basic Notes is intended for a general audience. On Google Play its target audience is declared as **18 and over**, and the app is **not directed at children**.
+- The app is not age-restricted or age-gated: it simply is not aimed at or marketed to children, and it contains no content, advertising, or features designed to appeal to them.
+- Through normal use, no personal information reaches us from anyone, of any age — notes stay on the device and are never sent to us.
+- We do not knowingly collect personal information from children under 13 (or the equivalent minimum age in your country). The only way information can reach us at all is if someone chooses to email us. If you believe a child has sent us personal information, contact us at the address below and we will delete it.
 
 ---
 
@@ -173,8 +167,6 @@ This policy is designed to comply with:
 - **CCPA (California, USA)**
 - **COPPA (Children)**
 - **Google Play Developer policies**
-
-Optional features added in the future will also comply with applicable laws.
 
 ---
 
