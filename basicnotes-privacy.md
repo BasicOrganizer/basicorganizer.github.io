@@ -1,6 +1,6 @@
 # Privacy Policy for Basic Notes
 
-**Last Updated: May 15, 2026**
+**Last Updated: August 9, 2026**
 
 ## Introduction
 
@@ -24,46 +24,97 @@ All user data is stored **locally on your device**:
 - **Note Titles:** Titles of your notes
 - **Timestamps:** Creation and last modified dates
 - **Trash:** Notes moved to Trash are retained locally for up to 30 days before permanent deletion
-- **App Preferences:** Settings, including language, sort order, and scroll position
+- **App Preferences:** Settings, including language, sort order, theme (light/dark), and your backup choices (including the backup folder you selected)
 
-This information is stored in a local SQLite database and is **not transmitted to any external servers or third parties**.
+This information is stored in a local SQLite database. By default it is **not** sent to the developer or to any server we operate.
+
+### Optional backups
+
+Backup is **optional**. Nothing is backed up by Basic Notes unless you enable a backup option in **Backup & Restore**. You can use either option, both, or neither.
+
+**Google Backup**
+
+- Only when you switch it on in the app *and* Google Backup is enabled in your phone settings.
+- Your notes database and your backup settings are included in your device’s backup, which is uploaded to your own Google account.
+- That backup is handled by Google under [Google’s Privacy Policy](https://policies.google.com/privacy), not by the Basic Notes developer. **We never receive, access, or host that data.**
+- You can turn it off in the app at any time, and you can delete device backups in your Google account settings.
+- Android and some device makers also offer their own backup and phone-to-phone transfer features. Basic Notes applies the same rule to those — it hands over nothing unless you have enabled Google Backup in the app — but those features are operated by your device manufacturer and by Google, not by us.
+
+**Folder backup**
+
+- Only when you switch it on and choose a folder using the system file picker (for example a folder on your phone, or in your own cloud storage).
+- The app then writes a backup file to that folder about once a day, and keeps the **5 most recent** files, deleting older ones.
+- The backup file is a **plain-text JSON file** containing your note titles, note content, creation and update times, starred marks, and notes still in Trash (with their deletion date). It is **not encrypted by the app**, so anyone who can open that folder can read your notes. Choose the folder accordingly.
+- The file is written to the location *you* chose. **We never receive, access, or host those files.** If the folder is in a cloud service, that service’s own privacy policy and terms apply.
+- Restoring from a backup **replaces** the notes currently in the app.
+- You can turn folder backup off at any time, and you can delete the backup files yourself in that folder.
+
+### Feedback emails
+
+The app does not send anything to the developer on its own. If you use **Feedback**, the app opens *your* email app with a message prepared for you. To help with troubleshooting, that message is pre-filled with:
+
+- Your device manufacturer and model
+- Your Android version
+- The Basic Notes version you are using
+
+Nothing is sent unless you press send in your own email app, and you can edit or delete any of it first. When you do send it, we receive your email address, your message, and anything else you chose to include. We use it only to answer you and to fix problems, we do not use it for marketing, and we delete correspondence when it is no longer needed for that purpose.
+
+### Permissions
+
+Basic Notes does **not** request the Android **internet permission**, and it has no code to send your notes anywhere. Your notes cannot be uploaded to us.
+
+The scheduling library used for folder backups (AndroidX WorkManager) adds these system permissions to the app, and they are used only to run the scheduled backup reliably:
+
+- `WAKE_LOCK`, `FOREGROUND_SERVICE` — allow a backup already in progress to finish
+- `RECEIVE_BOOT_COMPLETED` — restore the backup schedule after a restart
+- `ACCESS_NETWORK_STATE` — used by the scheduler; the app does not access the network
+
+Choosing a backup folder or exporting a file uses Android’s system file picker, which grants access only to the location you pick. The app does not request broad storage access.
 
 ### Third-Party Services
 
-Currently, the app does **not** use advertisements, analytics, or cloud storage. In the future, optional features **may** be introduced:
+Currently, the app contains **no advertising, no analytics, no trackers, no crash-reporting service, and no user accounts**. The libraries it uses (AndroidX and Google Material components) provide user-interface and scheduling functions and do not collect your data.
+
+Optional features **may** be introduced later:
 
 - **Advertisements:** Device and usage information may be collected by third-party ad networks. Note content will **never** be shared.
 - **Analytics:** Anonymous usage statistics may be collected to improve app performance.
-- **Cloud Storage & Sync:** Optional backup and synchronization between devices. Requires explicit opt-in.
+- **Account-based cloud sync:** Optional synchronization that requires signing in. Requires explicit opt-in.
 - **Cross-App Integration:** Optional sharing of data between authorized apps. Requires explicit consent.
 
 All future features will be clearly disclosed in app updates or within the app interface, and users will have the option to **opt-in or opt-out**.
 
 ### Data We Do Not Collect
 
-We do not directly collect or store:
+We operate no servers, and the app never transmits data to us by itself. We do not collect:
 
 - Note content or titles
-- Personal identification information (name, email, phone)
 - Precise location data
-- Contact information
+- Contact lists
 - Photos, media, or data from other apps
+- Advertising identifiers or usage analytics
+
+**One exception:** if *you* choose to email us (for example through **Feedback**), we necessarily receive your email address and whatever you write, as described above. We do not otherwise collect names, email addresses, or phone numbers.
 
 ---
 
 ## How We Use Your Information
 
-- Notes and app data remain **local to your device**.
-- No note content is shared or used for advertising or analytics unless users explicitly opt-in to future features.
+- Notes and app data remain **local to your device**, unless you opt in to backup or use Share / Export.
+- No note content is shared with the developer or used for advertising or analytics.
 - When users use Share or Export, note content may be sent only to applications or file locations selected by the user; the developer does not collect or receive that data.
+- When users opt in to Google Backup or folder backup, note data may be copied only as described above (Google’s backup systems, or a folder the user chooses).
 
 ---
 
 ## Data Security
 
-- **Local Storage:** Notes are stored securely in a local SQLite database.
-- **No Automatic Backup:** The app disables automatic cloud backup (`android:allowBackup="false"`).
-- **Device Security:** Data security depends on your device’s security features (screen lock, encryption, etc.).
+- **Local Storage:** Notes are stored in a local SQLite database in the app’s private storage, which other apps cannot read.
+- **No transmission by the app:** The app has no internet permission and does not upload your notes.
+- **Optional backup:** Basic Notes only includes your notes in a backup after you enable Google Backup or folder backup in the app.
+- **Backup files are not encrypted by the app:** A folder backup is a readable JSON file in the location you chose. Anyone with access to that folder or that cloud account can read it. Google Backup is protected by Google’s own systems and, on recent Android versions with a screen lock, is end-to-end encrypted by the device.
+- **Device Security:** Data security also depends on your device’s own protections (screen lock, device encryption, who has access to the device).
+- The app is provided by an independent developer and cannot guarantee absolute security.
 
 ---
 
@@ -79,21 +130,30 @@ We do not directly collect or store:
 
 - Users can delete individual notes or all notes at any time.
 - Notes in Trash are permanently deleted after 30 days unless restored or emptied sooner.
-- Uninstalling the app removes all locally stored data.
-- No server-side storage exists at this time.
+- Uninstalling the app removes local app data. **Backups you made are not removed by uninstalling:**
+  - Folder backups stay in the folder you chose until you delete the files (the app keeps the 5 newest while folder backup is on).
+  - Google Backup data stays in your Google account until you delete it in your device or Google account backup settings.
+- The developer does not operate server-side note storage.
+- Emails you send us are kept only as long as needed to handle your request, and can be deleted on request.
 
 ---
 
 ## User Rights
 
 - Access, modify, delete, and export notes at any time.
-- Opt-out of any optional features when they are implemented.
+- Opt in or out of optional backup features at any time in Backup & Restore.
 - EEA/Norwegian users have rights under GDPR (access, rectification, erasure, portability, objection, complaint).
+
+**Who is responsible (GDPR).** Because your notes stay on your device and we never receive them, we are not able to access, export, or delete them for you — you control them directly in the app. For the limited information you send us by email, the developer (Basic Organizer, contact below) acts as the data controller. The legal basis is our legitimate interest in answering your message and fixing problems in the app (GDPR Art. 6(1)(f)), or your consent where required.
+
+**California (CCPA/CPRA).** We do not sell your personal information, and we do not share it for cross-context behavioural advertising. We do not use it to build profiles. California residents may exercise their rights by contacting us at the address below, and we will not discriminate against you for doing so.
 
 ### Right to Erasure ("Right to be Forgotten")
 - You can delete individual notes or all notes within the app
-- You can uninstall the app to remove all local data
-- You can contact us to request assistance with deletion of any data that may be held by third-party services (such as advertising networks), though we have limited control over third-party data
+- You can uninstall the app to remove local app data
+- You can turn off backup and delete backup files or device backups you no longer want
+- You can ask us to delete any email correspondence you have sent us
+- Because we hold no notes or accounts, there is nothing else for us to delete on your behalf
 
 ---
 
@@ -146,9 +206,11 @@ By using Basic Notes, you consent to this Privacy Policy. If you do not agree, p
 ---
 
 **Summary:**
-- ✓ Notes stored locally only
-- ✓ No note content shared with the developer
-- ✓ Currently no ads or analytics
-- ✓ Optional future features require user consent
+- ✓ Notes stay on your device — the app has no internet permission and no servers behind it
+- ✓ No note content is ever sent to the developer
+- ✓ No ads, analytics, trackers, or accounts
+- ✓ Google Backup and folder backup are optional — Basic Notes backs up your notes only after you enable one, and only to *your* Google account or *your* chosen folder
+- ✓ Folder backup files are readable JSON — keep them somewhere you trust
+- ✓ Feedback emails include your device model and Android version, and are only sent if you send them
 - ✓ Users have full control over their data
-- ✓ Legal compliance with GDPR, CCPA, COPPA, and Google Play
+- ✓ Written to align with GDPR, CCPA/CPRA, COPPA, and Google Play policies
