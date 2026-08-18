@@ -1,12 +1,14 @@
 # Privacy Policy for Basic Lists
 
-**Last Updated: May 23, 2026**
+**Last Updated: August 18, 2026**
 
 ## Introduction
 
-This Privacy Policy explains how Basic Lists ("we", "our", or "the app") collects, uses, and protects information in connection with the Android mobile application. The application was formerly published as **Basic Checklists**; this policy applies to the same product (package name: `com.basicorganizer.checklists`).
+This Privacy Policy explains how Basic Lists ("we", "our", or "the app") collects, uses, and handles information in connection with the Android mobile application. The application was formerly published as **Basic Checklists**; this policy applies to the same product (package name: `com.basicorganizer.checklists`).
 
-Basic Organizer develops and maintains the app as an independent project. The application does not transmit checklist content to developer-operated servers. This document is provided for transparency and does not constitute legal advice.
+This policy covers the Basic Lists Android application published by Basic Organizer. It does not govern Google Play, email providers, Google’s backup systems, device manufacturers, or other third-party services. Those parties have their own policies.
+
+Basic Organizer develops and maintains the app as an independent project. The application does not operate developer-run servers and does not upload checklist content to the developer. This document is provided for transparency and does not constitute legal advice.
 
 ## Developer Information
 
@@ -26,135 +28,180 @@ All application data required for operation is stored **locally on the device**:
 - **Checklist Names:** Names of checklists
 - **Checklist Items:** Text content, checked status, starred status, and position of items
 - **Checklist Metadata:** Default checklist designation, checklist order, and creation data maintained by the app
-- **App Preferences:** Last opened checklist; settings for checked items and starred items; language preference (including system default)
+- **App Preferences:** Last opened checklist; settings for checked items and starred items; language preference (including system default); backup choices (including the backup folder selected, if any)
 
-This information is stored in a local SQLite database and in app-private preferences. It is **not transmitted to developer-operated servers or third parties** as part of normal app operation.
+This information is stored in a local SQLite database and in app-private preferences. The app does **not** send it to the developer or to any server operated by the developer.
 
-Item text and checklist names may constitute personal or sensitive information depending on content entered by the user. The developer does not access, review, or use that content for advertising or analytics in the current version.
+Item text and checklist names may constitute personal or sensitive information depending on content entered by the user. Users should avoid entering information they do not wish to store on the device or include in backups or support messages. The developer does not access, review, or use that content for advertising or analytics.
 
-The app does not request dangerous permissions (location, contacts, camera, microphone, etc.) in the current version. Network access is used only when external links are opened (for example, the developer page on Google Play).
+### Optional backups
+
+Backup is **optional**. In the app, both Google Backup and folder backup are **off by default** until switched on in **Backup & Restore**. Either option, both, or neither may be used.
+
+**Google Backup**
+
+- The app allows Android backup (`allowBackup`), but the app’s backup rules **exclude list data by default**. List data is included only when the in-app Google Backup option is enabled and the applicable Android backup mechanism uses those rules.
+- List data is added to a backup that uses the Android backup system only when the Google Backup option is switched on in **Backup & Restore** *and* Google Backup is enabled in device settings. In that case a backup agent includes the lists database and backup settings. Other app preferences (for example language and display settings) are not included.
+- That backup is handled by Google under [Google’s Privacy Policy](https://policies.google.com/privacy), not by the Basic Lists developer. **The developer does not receive, access, or host that data.**
+- The option may be turned off in the app at any time. Turning it off stops the app from adding list data to later backups that use the Android backup system. Copies already stored by Google remain until deleted in Google account or device backup settings.
+- The app’s backup configuration applies to backup mechanisms that use the Android backup system. Device manufacturers may provide separate transfer or migration tools whose behaviour can vary by device and Android version and which may be governed by the manufacturer’s own settings and policies.
+
+**Folder backup**
+
+- Only when switched on and a folder is chosen with the system file picker (for example a folder on the device, or in the user’s own cloud storage).
+- When folder backup is enabled, a backup file is written promptly, then about once a day (the schedule may be delayed if the battery is low). The app keeps the **5 most recent** files in that folder and deletes older backup files it created when a new one is written.
+- The backup file is a **plain-text JSON file** containing list names, item text, checked and starred marks, list and item order, default-list designation, creation dates, and internal identifiers. It is **not encrypted by the app**. Anyone with access to that folder can read its contents. The folder should be chosen accordingly.
+- Files are written only to the location chosen by the user. **The developer does not receive, access, or host those files.** If the folder is in a cloud service, that service’s own privacy policy and terms apply.
+- Restoring from a backup **replaces** the lists currently in the app.
+- Folder backup may be turned off at any time. Turning it off stops further automatic writes. Existing backup files remain in the folder until the user deletes them.
+
+**User responsibility for backups**
+
+Users are responsible for deciding whether to enable backups and where folder backup files are stored. Because folder backup files are not encrypted by the app, users should choose a storage location they consider appropriate for the information they enter. The developer does not control third-party storage locations (including cloud folders) and cannot guarantee their security or availability. Nothing in this section limits rights or remedies that cannot be excluded under applicable law.
+
+### Feedback emails
+
+The app does not send messages to the developer on its own. If **Feedback** is used, the device email application is opened with a message prepared for the user. To assist troubleshooting, that message is pre-filled with:
+
+- Device manufacturer and model
+- Android version (SDK level)
+- The Basic Lists version in use (in the email subject)
+
+Nothing is sent unless the message is sent from the user’s own email application. The contents may be edited or deleted first. When a message is sent, the developer receives the sender’s email address, the message, and anything else included (which may include list content if the sender pastes it). Correspondence is used only to respond to the request and to resolve related issues, is not used for marketing, and is retained only for as long as reasonably necessary for those purposes. Deletion of correspondence may be requested using the contact details below. Email is delivered through the sender’s and the developer’s mail providers, which have their own policies.
+
+### Permissions
+
+The app does **not** declare the Android internet permission, and the application code does not upload list data to the developer.
+
+The app uses Android system functionality to schedule local backup operations. These operations run on the device and are not used to transmit list data to the developer.
+
+Choosing a backup folder uses Android’s system file picker, which grants access only to the location selected. The app does not request broad storage access. Opening an external link (for example the developer page on Google Play) uses the system to launch another application; it does not grant this app network access.
 
 ### Third-Party Services
 
-The current version does **not** integrate advertisements, analytics SDKs, or cloud storage. Standard Android / AndroidX / Material libraries are used for the user interface only.
+The current version of the app contains **no advertising, no analytics, no trackers, no crash-reporting service, and no user accounts**. The libraries it uses (AndroidX and Google Material components) provide user-interface and scheduling functions. They are not used by the developer to collect user data.
+
+If this ever changes, this policy and the app’s Data safety information on Google Play will be updated before the change is released, and consent will be requested where the law requires it.
 
 The following user-initiated actions involve third parties not controlled by Basic Organizer:
 
-- **Report a bug:** Opens the device’s email application with a pre-filled support address. Transmission of any message and its contents is governed by the email provider’s policies.
+- **Feedback:** Opens the device’s email application as described above. Transmission of any message is governed by the email providers’ policies.
 - **Developer page on Google Play:** Opens Google Play or a browser. Data processing by Google is governed by [Google’s Privacy Policy](https://policies.google.com/privacy).
-- **Google Play distribution:** Installation, updates, and store interactions involve processing by Google as store operator.
-
-In the future, optional features **may** be introduced:
-
-- **Advertisements:** Device and usage information may be collected by third-party ad networks. Checklist content will **never** be shared.
-- **Analytics:** Anonymous usage statistics may be collected to improve app performance.
-- **Cloud Storage & Sync:** Optional backup and synchronization between devices. Requires explicit opt-in.
-- **Cross-App Integration:** Optional sharing of data between authorized apps. Requires explicit consent.
-
-All future features will be disclosed in app updates or within the app interface. Opt-in will be required where mandated by applicable law before new collection or sharing begins.
+- **Google Play distribution:** Installation, updates, ratings, and store interactions involve processing by Google as store operator.
+- **Optional Google Backup:** If enabled, device backup that uses the Android backup system is processed by Google as described above.
 
 ### Data We Do Not Collect
 
-The developer does not operate backend servers for this app and does not directly collect or store on developer systems:
+The developer does not operate servers for this app. The app does not send data to the developer by itself. Through the app, the following are not sent to the developer:
 
-- Checklist content or item text from application databases
-- Personal identification information (name, email, telephone) through the app
-- Account credentials (the app provides no user accounts)
+- Checklist content or titles
 - Precise location data
-- Contact information, photos, media, or data from other applications
-- Advertising identifiers for developer-operated tracking (no advertisements in the current version)
+- Contact lists
+- Photos, media, or data from other apps
+- Advertising identifiers or usage analytics
 
-**Clarification:** Checklist and preference data reside on the device for application functionality. Local storage does not constitute remote collection by the developer.
+Google Play, Google Backup, email providers, Android, and device manufacturers may process information in connection with their respective services under their own policies. The developer does not control those services.
 
-Voluntary email correspondence may include personal information supplied by the sender; such data is not collected through the app interface.
+**One exception:** if the user chooses to email the developer (for example through **Feedback**), the developer necessarily receives the email address and whatever is written, as described above. Names, email addresses, and telephone numbers are not otherwise received by the developer.
 
 ---
 
 ## How We Use Your Information
 
-- Checklists and application data remain **local to the device** during normal operation.
-- No checklist content is shared or used for advertising or analytics unless the user opts in to a future feature described above.
-- Voluntary email is used solely to respond to support inquiries.
-- Personal information is **not sold**. Personal information is **not shared** for cross-context behavioral advertising in the current version.
+- Checklists and application data remain **local to the device**, unless a backup option is enabled as described above.
+- Checklist content is not used for advertising or analytics, and is not sent to the developer except if the user includes it in an email.
+- When Google Backup or folder backup is enabled, list data may be copied as described above (Google’s backup systems that use the Android backup system, or a folder chosen by the user). Separate manufacturer transfer tools are described in the backup section.
+- Voluntary email is used solely to respond to support inquiries and to resolve related issues.
+- Personal information is **not sold**. Personal information is **not shared** for cross-context behavioural advertising.
 
 ---
 
 ## Data Security
 
-- **Local Storage:** Checklists are stored in an app-private SQLite database on the device.
-- **No Automatic Backup:** The app disables automatic cloud backup (`android:allowBackup="false"`).
-- **Device Security:** Protection of local data depends on device-level security (screen lock, encryption, and related measures).
-- **Limitations:** No storage method is completely secure; uninterrupted operation or absolute security cannot be guaranteed.
+- **Local Storage:** Checklists are stored in a local SQLite database in the app’s private storage. Other apps cannot read that storage in ordinary Android use. They may be readable on a rooted or compromised device, or by someone with physical access to an unlocked device.
+- **No upload by the app:** The app does not declare internet permission and does not upload list data to the developer.
+- **Optional backup:** Backup rules exclude list data by default. List data is added to Google Backup (via the Android backup system) or written as a folder backup only after the corresponding option is enabled in the app.
+- **Backup files are not encrypted by the app:** A folder backup is a readable JSON file in the chosen location. Anyone with access to that folder or that cloud account can read it. Google Backup is handled by Google under Google’s own systems and policies. The developer does not control those systems.
+- **Device Security:** Data security also depends on the device’s own protections (screen lock, device encryption, and who has access to the device).
+- The app is provided by an independent developer and cannot guarantee absolute security.
 
 ---
 
 ## Children's Privacy
 
-- The app is suitable for general audiences.
-- The developer does not knowingly collect personal information from children under 13 (or the applicable age in the user’s jurisdiction) through developer-operated servers.
-- Any future advertising will be implemented in accordance with applicable child-privacy requirements (including COPPA, where applicable) and store policies.
+- Basic Lists is intended for a general audience. The app is **not directed at children** and is not marketed to children.
+- The app is not age-restricted or age-gated. It contains no advertising and no features designed to appeal specifically to children.
+- List data stays on the device and is not sent to the developer through ordinary use of the app. The only way information can reach the developer is if someone chooses to send an email.
+- The developer does not knowingly collect personal information from children under 13 (or the equivalent minimum age in the applicable country). If it is believed that a child has sent personal information by email, contact the address below and it will be deleted.
 
 ---
 
 ## Data Retention and Deletion
 
 - Individual checklists and items may be deleted within the application at any time.
-- Uninstallation of the application removes locally stored data under standard Android behavior.
-- No server-side storage of checklist databases exists in the current version.
-- Voluntary email correspondence may be retained for support purposes until no longer required; deletion may be requested by contacting the developer.
+- Uninstallation of the application removes locally stored app data under standard Android behaviour. **Backups already made are not removed by uninstalling:**
+  - Folder backups remain in the chosen folder until the files are deleted (while folder backup is on, the app keeps the 5 newest files it created).
+  - Google Backup data remains in the Google account until deleted in device or Google account backup settings.
+- The developer does not operate server-side list storage.
+- Feedback correspondence is retained only for as long as reasonably necessary to respond to the request and resolve related issues. Deletion of correspondence may be requested using the contact details below.
 
 ---
 
 ## User Rights
 
-Depending on jurisdiction, rights may apply under GDPR (EEA/UK/Norway), CCPA/CPRA (California), and other laws. Because checklist data in the current version is held on the device and not on developer servers, access, correction, and erasure of list content are ordinarily effected through in-app controls or uninstallation.
+- Access, modify, and delete checklists through the application.
+- Copy list data by using folder backup, which writes a JSON file to a chosen folder.
+- Opt in or out of optional backup features at any time in Backup & Restore.
+- Users in the EEA, United Kingdom, and Norway may have rights under GDPR / UK GDPR (access, rectification, erasure, portability, objection, complaint to a supervisory authority).
 
-- Access, modify, delete, and manage checklists through application controls.
-- Opt-out of optional features when implemented, where applicable.
-- EEA, UK, and Norwegian users may have rights of access, rectification, erasure, restriction, portability, objection, and complaint to a supervisory authority, subject to applicable law.
+**Who is responsible (GDPR / UK GDPR).** List data stays on the device and is not received by the developer, so the developer cannot access, export, or delete lists on the user’s behalf — that control is exercised directly in the app. For the limited information sent by email, the independent developer who publishes the app under the name Basic Organizer (contact below) acts as the data controller. The legal basis is legitimate interest in answering the message and resolving related issues (GDPR Art. 6(1)(f) / the UK equivalent), or consent where required.
 
-Privacy requests: **basicorganizer.post@gmail.com** (subject: “Privacy request – Basic Lists”), including the nature of the request, jurisdiction, and relevant particulars. GDPR-related requests will be answered within 30 days where required, with extension up to an additional 60 days where permitted for complex cases.
+**California (CCPA/CPRA).** Personal information is not sold and is not shared for cross-context behavioural advertising. It is not used to build profiles. California residents may exercise their rights by contacting the address below. There is no discrimination for doing so.
+
+Privacy requests: **basicorganizer.post@gmail.com** (subject: “Privacy request – Basic Lists”), including the nature of the request, jurisdiction, and relevant particulars. GDPR-related requests will be answered within one month where required, with extension by up to two further months where permitted for complex cases.
 
 ### Right to Erasure ("Right to be Forgotten")
 
-- Individual checklists or items may be deleted within the application.
-- Uninstallation removes local application data.
-- The developer may be contacted regarding deletion of data held in voluntary correspondence; control over third-party service data is limited.
+- Individual checklists or items may be deleted within the application
+- The application may be uninstalled to remove local app data
+- Backup may be turned off, and backup files or device backups that are no longer wanted may be deleted
+- The developer may be asked to delete any email correspondence that has been sent
+- Because the developer holds no lists or accounts, there is nothing else to delete on the user’s behalf
 
 ---
 
 ## Changes to This Privacy Policy
 
 - Updates will be reflected in the "Last Updated" date.
-- Material changes will be communicated via app updates or in-app notice where practicable.
-- Continued use of the app after changes constitutes acceptance where permitted by applicable law. Disagreement with an updated policy requires discontinuation of use and removal of the application.
+- Material changes will be described in app updates or by in-app notice where practicable.
+- If the user does not agree with an updated policy, the application should not continue to be used and may be uninstalled. This policy is a notice of practices; it is not a substitute for rights that cannot be waived under applicable law.
 
 ---
 
 ## Legal Compliance
 
-This policy is intended to address requirements commonly associated with:
+This policy has been prepared with the following frameworks in mind:
 
-- **GDPR (EEA/Norway/UK)**
+- **GDPR (EEA) and UK GDPR**
 - **CCPA/CPRA (California, USA)**
 - **COPPA (Children)**
 - **Google Play Developer policies**
 
-Where GDPR applies to on-device processing of personal data, legal bases include performance of the application requested by the user and, where relevant, legitimate interests in providing local checklist functionality. Optional future processing will rely on consent or another valid basis as required.
+This is not a certification of compliance with every requirement of every jurisdiction. Laws and store rules change, and an independent developer cannot guarantee that every scenario is covered.
 
-International transfer: checklist databases are not transferred to developer servers in the current version. Email may be processed in jurisdictions where the mail provider operates.
+The developer does not receive list data. For the limited information sent by email, the legal basis is described under User Rights.
 
-Optional features added in the future will be implemented in accordance with applicable laws. Full compliance with every jurisdiction cannot be guaranteed.
+International transfer: checklist databases are not transferred to developer servers. Email may be processed in jurisdictions where the mail providers operate (which may include countries outside the user’s home country).
 
 ---
 
 ## Contact Us
 
 **Email:** basicorganizer.post@gmail.com  
-**Developer:** Basic Organizer
+**Published under the name:** Basic Organizer
 
 **Response Time:**
-Reasonable efforts will be made to respond to inquiries in a timely manner. For users in the European Economic Area (EEA), including Norway, GDPR-related requests will be answered within 30 days as required by law, and may be extended by an additional two months where necessary, taking into account the complexity and number of requests.
+Reasonable efforts will be made to respond to inquiries in a timely manner. For users in the European Economic Area (EEA), the United Kingdom, and Norway, GDPR-related requests will be answered within one month as required by law, and may be extended by up to two further months where necessary, taking into account the complexity and number of requests.
 
 For other inquiries, responses will be provided as promptly as practicable; timing may vary.
 
@@ -167,22 +214,23 @@ When contacting us, please include:
 
 ## Disclaimer
 
-The app and this Privacy Policy are provided "as is" without warranties of any kind. Reasonable efforts are made to protect data and address applicable privacy requirements; uninterrupted service or absolute security cannot be guaranteed. Device security, backups, and content entered into checklists remain the responsibility of the device owner.
+The app and this Privacy Policy are provided "as is" without warranties of any kind. Reasonable efforts are made to protect data and to describe practices accurately; uninterrupted service or absolute security cannot be guaranteed. Device security, backups, and content entered into checklists remain the responsibility of the device owner.
 
-To the maximum extent permitted by applicable law, Basic Organizer shall not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data arising from device failure, third-party services, or circumstances beyond reasonable control. Total liability for claims relating to the app or this policy is limited to amounts paid for the app in the twelve months preceding the claim, or zero if the app was provided without charge, unless mandatory law prohibits such limitation. Some jurisdictions do not allow certain limitations; those provisions apply only to the extent permitted.
+To the maximum extent permitted by applicable law, Basic Organizer shall not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data arising from device failure, third-party services, or circumstances beyond reasonable control. Total liability for claims relating to the app or this policy is limited to amounts paid for the app in the twelve months preceding the claim, or zero if the app was provided without charge, unless mandatory law prohibits such limitation. Some jurisdictions do not allow certain limitations; those provisions apply only to the extent permitted. Nothing in this policy limits rights or remedies that cannot be excluded under consumer or data-protection law.
 
 ---
 
-## Consent
+## Privacy Policy Notice
 
-By using Basic Lists, the user agrees to this Privacy Policy. If the user does not agree, the application should not be used.
+This Privacy Policy is a notice of the app’s privacy practices. It is not, by itself, a request for or a record of consent. Where applicable law requires consent for a particular processing activity, that consent will be obtained separately.
 
 ---
 
 **Summary:**
-- ✓ Checklists stored locally only
-- ✓ No checklist content transmitted to developer servers in the current version
-- ✓ No ads or analytics in the current version
-- ✓ Optional future features require opt-in where required by law
-- ✓ Data manageable and deletable through application controls
-- ✓ Policy structured for GDPR, CCPA/CPRA, COPPA, and Google Play requirements
+- ✓ Lists stay on the device — the app does not declare internet permission and the developer does not operate servers for this app
+- ✓ Checklist content is not sent to the developer by the app (only if included in an email the user chooses to send)
+- ✓ No ads, analytics, trackers, or accounts in the current version
+- ✓ Google Backup and folder backup are optional; both in-app switches start off
+- ✓ Folder backup files are readable JSON — they should be kept somewhere trusted
+- ✓ Feedback emails include device model and Android version, and are sent only if the user sends them
+- ✓ List data can be edited, deleted, or copied (folder backup) in the app
