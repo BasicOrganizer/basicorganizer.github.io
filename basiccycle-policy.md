@@ -35,7 +35,7 @@ Users should not rely on the app as their only means of remembering periods, fer
 
 The app is not intended to replace professional advice, diagnosis, treatment, emergency services, or clinically validated fertility-awareness or contraceptive methods.
 
-Basic Cycle is **not** a healthcare provider, health insurer, or other entity covered by the U.S. Health Insurance Portability and Accountability Act (HIPAA), and this policy is not a HIPAA notice.
+This app is not provided as part of a HIPAA-covered healthcare service, and this Privacy Policy is not a HIPAA Notice of Privacy Practices.
 
 ---
 
@@ -45,7 +45,7 @@ Information you enter into Basic Cycle — including menstrual cycles, period da
 
 This information is stored **locally on your device** by default and is **not transmitted by the app** to Basic Organizer or to any server operated by Basic Organizer. Optional backup features can create copies outside the app's private storage, as described below. Optional morning notifications may display cycle-related text on the device notification shade when enabled and permitted by the system.
 
-Health-related information is used by the app to provide tracking, calendar, journal, statistics, personalization, optional reminders, and related functionality. It may also be included in optional backups enabled by the user or in communications the user voluntarily sends to the developer. It is **never** used for advertising, profiling, analytics, marketing, or sold or shared with third parties by the developer.
+The app uses this information locally to provide tracking, calendar, journal, statistics, personalization, optional reminders, and related functionality. It may also be included in optional backups enabled by the user or in communications the user voluntarily sends to the developer. **Basic Organizer does not use this information for advertising, profiling, analytics, or marketing**, and does not sell it or share it with third parties for those purposes.
 
 Basic Cycle does **not** use artificial intelligence or external cloud services to analyze your health information. Calculations and predictions run **locally on your device**.
 
@@ -82,7 +82,7 @@ This information is stored in a local SQLite database and in app-private SharedP
 
 Morning cycle reminders are **optional**. Categories can be turned on or off in **Notifications**. By default, the in-app category switches start **on**, but notifications appear on screen only if the device's notification permission / system notification settings also allow them.
 
-When a category is enabled and the system allows notifications, the app may schedule a **local** morning reminder for **approximately 8:00 local time, subject to Android's background scheduling and device power-management behavior**, and show at most one notification on a given day when a matching cycle condition applies, such as:
+When a category is enabled and the system allows notifications, the app may schedule a **local** morning reminder for **approximately 8:00 local time, subject to Android's background scheduling and device power-management behavior**. The app is **designed to show no more than one** notification on a given day when a matching cycle condition applies, such as:
 
 - Upcoming period milestones (including the start of the luteal phase and selected days before a predicted period, or period expected today)
 - Period delay (including daily reminders while a predicted period is late, up to a capped number of days)
@@ -94,7 +94,7 @@ On Android 13 and later, the app declares the **POST_NOTIFICATIONS** permission.
 
 After a device restart or app update, the app may reschedule the next morning reminder locally. Delivery can be affected by Do Not Disturb, battery optimization, Doze mode, WorkManager timing, manufacturer-specific power management, timezone changes, missing or incomplete cycle data, or other system settings outside the developer's control. **Notifications are not guaranteed to fire at the exact intended moment, or at all.**
 
-Tapping a notification opens the app. No third-party analytics or advertising SDK receives notification events through the app.
+Tapping a notification opens the app. The current version is not designed to send notification events to advertising, analytics, or crash-reporting services.
 
 ### Optional app PIN (app lock)
 
@@ -113,21 +113,21 @@ Because cycle data may include sensitive health and intimacy information, users 
 
 **Google Backup**
 
-- The app allows Android backup (`allowBackup`), but cycle data is included in a backup that uses the Android backup system only when the in-app Google Backup option is enabled. A custom backup agent includes the cycle database and related preference files only when that option is switched on; if it is off, the agent backs up nothing.
-- Cycle data is added to Google Backup only when the Google Backup option is switched on in **Backup & Restore** *and* Google Backup is enabled in device settings. When included, that backup contains:
+- The app allows Android backup (`allowBackup`). A custom full-backup agent is designed to include the cycle database and related preference files only when the in-app Google Backup option is switched on; if that option is off, the agent is designed to back up nothing through that path. (Key/value backup APIs are unused.)
+- Cycle data is added to Google Backup only when the Google Backup option is switched on in **Backup & Restore** *and* Google Backup is enabled in device settings. When included, that backup **may contain**:
   - The cycle SQLite database (period days, ovulation days, intimacy days, notes, symptoms, and custom symptoms)
-  - App preferences (including personalization, display preferences, notification category switches, theme, language-related preferences stored there, disclaimer acknowledgement, symptom visibility, and PIN hash/salt if a PIN is set)
+  - App preferences (including personalization, display preferences, notification category switches, theme, language preference stored in app preferences, disclaimer acknowledgement, symptom visibility, and PIN hash/salt if a PIN is set)
   - Backup preference settings (such as opt-in flags and, if folder backup was configured, the chosen folder location)
-- That backup is handled by Google under [Google's Privacy Policy](https://policies.google.com/privacy), not by the Basic Cycle developer. **The developer does not receive, access, or host that data.** **Basic Organizer does not control Google's encryption, retention, restoration, or deletion mechanisms for Google Backup.**
+- That backup is handled by Google under [Google's Privacy Policy](https://policies.google.com/privacy), not by the Basic Cycle developer. **The developer does not receive, access, or host that data.** Google operates and controls its backup service, including its applicable security, retention, restoration, and deletion mechanisms. Those practices are governed by Google's applicable policies and settings. **Basic Organizer does not control those mechanisms.**
 - The option may be turned off in the app at any time. Turning it off stops the app from adding cycle data to later backups that use the Android backup system. Copies already stored by Google remain until deleted in Google account or device backup settings.
-- The app's backup configuration applies to backup mechanisms that use the Android backup system. Device manufacturers may provide separate transfer or migration tools whose behavior can vary by device and Android version and which may be governed by the manufacturer's own settings and policies.
+- The app's backup configuration applies to backup mechanisms that use the Android backup system. The in-app Google Backup switch does **not** necessarily control every Android or manufacturer copy, transfer, cloning, or migration path. Device manufacturers may provide separate transfer or migration tools whose behavior can vary by device and Android version and which may be governed by the manufacturer's own settings and policies.
 - The developer does not control third-party device backup, migration, cloning, synchronization, restoration, or transfer mechanisms. Such mechanisms may copy, retain, modify, omit, or otherwise process application data independently of the app's own backup settings. Their operation is governed by the applicable device manufacturer, operating system, or service provider.
 
 **Folder backup**
 
 - Only when switched on and a folder is chosen with the system file picker (for example a folder on the device, or in the user's own cloud storage).
 - When folder backup is enabled, a backup file is written promptly, then about once a day (the schedule may be delayed if the battery is low). The app attempts to keep the **5 most recent** backup files it created in that folder and may delete older backup files it created when a new one is written.
-- The backup file is a **plain-text JSON file** containing period days, ovulation days, intimacy days, notes, symptoms, custom symptoms, exported preferences (including personalization, calendar prediction display options, notification category switches, theme, disclaimer acknowledgement, symptom visibility, and PIN salt/hash if a PIN is set), and backup metadata (such as format version and export time). It is **not encrypted by the app**. Anyone with access to that folder can read its contents, which may include sensitive health and intimacy information. The folder should be chosen accordingly.
+- The backup file is a **plain-text JSON file** containing period days, ovulation days, intimacy days, notes, symptoms, custom symptoms, exported preferences (including personalization, calendar prediction display options, notification category switches, theme, disclaimer acknowledgement, symptom visibility, and PIN salt/hash if a PIN is set), and backup metadata (such as format version and export time). **Language preference is not currently included in the folder backup JSON** (it may still be included in Google Backup of app preferences, as described above). The folder backup file is **not encrypted by the app**. Anyone with access to that folder can read its contents, which may include sensitive health and intimacy information. The folder should be chosen accordingly.
 - Files are written only to the location chosen by the user. **The developer does not receive, access, or host those files.** If the folder is in a cloud service, that service's own privacy policy and terms apply.
 - Restoring from a backup **replaces** the cycle data currently in the app.
 - Folder backup may be turned off at any time. Turning it off stops further automatic writes. Existing backup files remain in the folder until the user deletes them.
@@ -153,9 +153,9 @@ The app declares the following permissions. None of them are used by the app to 
 - **POST_NOTIFICATIONS (Android 13+):** Used to display optional local morning cycle reminders when the user has enabled notification categories and system notification permission is granted.
 - **RECEIVE_BOOT_COMPLETED:** Used to reschedule the next local morning reminder after the device restarts (and after the app is updated, where applicable).
 
-The app does **not** declare the Android **INTERNET** permission, and the application code does not upload cycle data to the developer.
+**The app does not transmit cycle data to Basic Organizer or to a developer-operated server.** The app's application code is designed not to upload cycle data to Basic Organizer or a developer-operated server. As supporting evidence of that design, the app does **not** declare the Android **INTERNET** permission.
 
-The scheduling library used for folder backups and morning reminders (AndroidX WorkManager) may add system permissions such as `WAKE_LOCK`, `FOREGROUND_SERVICE`, and `ACCESS_NETWORK_STATE`. These permissions support background scheduling and execution of app operations on the device. They are not used by the developer to upload cycle data to developer-operated servers.
+AndroidX WorkManager and other bundled Android components may contribute system permissions required for background scheduling. Some of these permissions can include `WAKE_LOCK`, `FOREGROUND_SERVICE`, or `ACCESS_NETWORK_STATE`. Their presence does not mean that Basic Cycle uploads cycle data to the developer or to a developer-operated server.
 
 Choosing a backup folder uses Android's system file picker, which grants access only to the location selected. The app does not request broad storage access. Opening an external link (for example the developer page on Google Play) uses the system to launch another application; it does not grant this app network access for uploading cycle data.
 
@@ -203,7 +203,7 @@ Google Play, Google Backup, email providers, Android, and device manufacturers m
 ## Data Security
 
 - **Local Storage:** Cycle data is stored in a local SQLite database and app-private preferences. Other apps cannot read that storage in ordinary Android use. They may be readable on a rooted or compromised device, or by someone with physical access to an unlocked device.
-- **No upload by the app:** The app does not declare internet permission and does not transmit period, ovulation, intimacy, symptom, or note content to Basic Organizer or to any server operated by Basic Organizer.
+- **No upload by the app:** The app's application code is designed not to upload period, ovulation, intimacy, symptom, or note content to Basic Organizer or a developer-operated server. As supporting evidence of that design, the app does not declare the Android INTERNET permission.
 - **Optional backup:** Cycle data is added to Google Backup (via the Android backup system) or written as a folder backup only after the corresponding option is enabled in the app.
 - **Backup files are not encrypted by the app:** A folder backup is a readable JSON file in the chosen location. Anyone with access to that folder or that cloud account can read it, including sensitive health and intimacy information if present. Google Backup is handled by Google under Google's own systems and policies. The developer does not control those systems.
 - **Optional PIN:** The PIN lock is a convenience feature. It is not a substitute for device screen lock, full-disk encryption, or professional security controls.
@@ -248,11 +248,11 @@ Users are responsible for enabling and maintaining backups if they require copie
 - Opt in or out of optional backup features at any time in Backup & Restore.
 - Enable or disable notification categories in Notifications, and control notification permission in system settings.
 - Set, change, or remove an optional app PIN in Settings.
-- Users in the EEA, United Kingdom, and Norway may have rights under GDPR / UK GDPR (access, rectification, erasure, portability, objection, complaint to a supervisory authority), including rights relating to special-category / health data where applicable.
+- Users in the EEA and United Kingdom may have rights under GDPR / UK GDPR (access, rectification, erasure, portability, objection, complaint to a supervisory authority), including rights relating to special-category / health data where applicable.
 
-**Who is responsible (GDPR / UK GDPR).** Cycle data stays on the device and is not received by the developer through the app, so the developer cannot access, export, or delete cycle data on the user's behalf — that control is exercised directly in the app. For information voluntarily sent by email, the independent developer who publishes the app under the name Basic Organizer (contact below) acts as the data controller. For that information, the developer determines the applicable legal basis under the circumstances, which may include legitimate interests for responding to an inquiry and, where special-category data or another form of consent is involved, an applicable condition under Article 9 GDPR / the corresponding UK GDPR requirements (this Privacy Policy is not itself that consent; see Privacy Policy Notice below).
+**Who is responsible (GDPR / UK GDPR).** Cycle data stays on the device and is not received by the developer through the app, so the developer cannot access, export, or delete cycle data on the user's behalf — that control is exercised directly in the app. Requests concerning locally stored cycle data can generally be fulfilled directly by deleting the data within the app or removing the app, rather than by contacting the developer. For information voluntarily provided by email, the independent developer who publishes this app under the name Basic Organizer (contact below) acts as the data controller and processes that information only as necessary to respond to the inquiry and manage related support. The applicable legal basis under Article 6 GDPR / the corresponding UK GDPR requirements depends on the circumstances. Where the information includes special-category personal data, processing will additionally rely on an applicable condition under Article 9 GDPR / the corresponding UK GDPR requirements where required (this Privacy Policy is not itself consent; see Privacy Policy Notice below).
 
-**California (CCPA/CPRA).** Personal information is not sold and is not shared for cross-context behavioral advertising. It is not used to build profiles. California residents may exercise their rights by contacting the address below. There is no discrimination for doing so. The categories of sensitive personal information that may be stored locally by the app, and the circumstances in which information may leave the device through user-enabled backups or voluntary communications, are described in this policy.
+**California (CCPA/CPRA).** To the extent the California Consumer Privacy Act, as amended, applies to Basic Organizer, personal information is not sold and is not shared for cross-context behavioral advertising, and is not used to build profiles. California residents may exercise applicable rights by contacting the address below. There is no discrimination for doing so. The categories of sensitive personal information that may be stored locally by the app, and the circumstances in which information may leave the device through user-enabled backups or voluntary communications, are described in this policy.
 
 Privacy requests: **basicorganizer.post@gmail.com** (subject: "Privacy request - Basic Cycle"), including the nature of the request, jurisdiction, and relevant particulars. GDPR-related requests will be answered within one month where required, with extension by up to two further months where permitted for complex cases.
 
@@ -262,7 +262,7 @@ Privacy requests: **basicorganizer.post@gmail.com** (subject: "Privacy request -
 - The application may be uninstalled to remove local app data
 - Backup may be turned off, and backup files or device backups that are no longer wanted may be deleted
 - The developer may be asked to delete any email correspondence that has been sent
-- Because the developer does not hold cycle data or user accounts, there is no developer-held cycle database to delete. Any personal information contained in support correspondence can be handled as described in the Feedback emails and Data Retention sections.
+- Because the developer does not hold cycle data or user accounts, there is no developer-held cycle database to delete. Requests concerning locally stored cycle data can generally be fulfilled directly by deleting the data within the app or removing the app. Any personal information contained in support correspondence can be handled as described in the Feedback emails and Data Retention sections.
 
 ---
 
@@ -285,7 +285,7 @@ This policy is intended to describe the app's current data practices and has bee
 
 This is not a certification of compliance with every requirement of every jurisdiction. Laws and store rules change, and an independent developer cannot guarantee that every scenario is covered.
 
-The developer does not receive cycle data through the app. For information voluntarily sent by email, the legal basis is described under User Rights.
+The developer does not receive cycle data through the app. For information voluntarily sent by email, the applicable legal basis is determined as described under User Rights.
 
 International transfer: cycle databases are not transferred to developer servers. Email may be processed in jurisdictions where the mail providers operate (which may include countries outside the user's home country).
 
@@ -297,7 +297,7 @@ International transfer: cycle databases are not transferred to developer servers
 **Published under the name:** Basic Organizer
 
 **Response Time:**
-Reasonable efforts will be made to respond to inquiries in a timely manner. For users in the European Economic Area (EEA), the United Kingdom, and Norway, GDPR-related requests will be answered within one month as required by law, and may be extended by up to two further months where necessary, taking into account the complexity and number of requests.
+Reasonable efforts will be made to respond to inquiries in a timely manner. For users in the European Economic Area (EEA) and the United Kingdom, GDPR-related requests will be answered within one month as required by law, and may be extended by up to two further months where necessary, taking into account the complexity and number of requests.
 
 For other inquiries, responses will be provided as promptly as practicable; timing may vary.
 
@@ -312,9 +312,7 @@ When contacting us, please include:
 
 The app and this Privacy Policy are provided "as is" without warranties of any kind. Reasonable efforts are made to protect data and to describe practices accurately; uninterrupted service, accurate predictions, timely notifications, or absolute security cannot be guaranteed. Device security, backups, notification settings, PIN use, and content entered into the app remain the responsibility of the device owner.
 
-The app may calculate, display, summarize, predict, or otherwise present cycle-related information based on data entered by the user. Such information may contain errors, omissions, inaccuracies, or limitations and should not be treated as a guarantee of accuracy. The developer is not responsible for decisions, actions, outcomes, or consequences resulting from reliance on information recorded, calculated, displayed, predicted, or notified by the app (including missed, delayed, or inaccurate period, fertility, ovulation, or pregnancy-related decisions).
-
-To the maximum extent permitted by applicable law, Basic Organizer shall not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, arising from device failure, third-party services, missed or inaccurate notifications or predictions, reproductive or medical decisions, or circumstances beyond reasonable control. Total liability for claims relating to the app or this policy is limited to amounts paid for the app in the twelve months preceding the claim, or zero if the app was provided without charge, unless mandatory law prohibits such limitation. Some jurisdictions do not allow certain limitations; those provisions apply only to the extent permitted. Nothing in this policy limits rights or remedies that cannot be excluded under consumer or data-protection law.
+The app may calculate, display, summarize, predict, or otherwise present cycle-related information based on data entered by the user. Such information may contain errors, omissions, inaccuracies, or limitations and should not be treated as a guarantee of accuracy. **Do not rely on fertile-window or ovulation estimates to prevent pregnancy.** The developer is not responsible for decisions, actions, outcomes, or consequences resulting from reliance on information recorded, calculated, displayed, predicted, or notified by the app (including missed, delayed, or inaccurate period, fertility, ovulation, or pregnancy-related decisions).
 
 ---
 
@@ -326,7 +324,7 @@ This Privacy Policy is a notice of the app's privacy practices. It is not, by it
 
 **Summary:**
 - ✓ Cycle data stays on the device — the app does not declare internet permission and the developer does not operate servers for this app
-- ✓ Cycle, health, and intimacy information is not transmitted **by the app** to Basic Organizer or to any server operated by Basic Organizer (user-enabled backups and voluntary emails are separate)
+- ✓ Cycle, health, and intimacy information is not transmitted by the app to Basic Organizer or a developer-operated server; user-enabled backups and voluntary emails are separate
 - ✓ No ads, analytics, advertising trackers, or accounts in the current version
 - ✓ No AI or cloud services analyze health information; predictions run locally
 - ✓ Google Backup and folder backup are optional; both in-app switches start off
