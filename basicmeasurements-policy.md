@@ -1,252 +1,341 @@
 # Privacy Policy for Basic Measurements
 
-**Last Updated: August 3, 2026**
+**Last Updated: November 20, 2026**
 
 ## Introduction
 
-This Privacy Policy explains how Basic Measurements ("we", "our", or "the app") handles information when you use our mobile application. Basic Measurements is a personal tool for logging body weight and body measurements, viewing on-device statistics (including BMI and waist-to-hip ratio), and optionally setting reminders.
+This Privacy Policy explains how Basic Measurements ("we", "our", or "the app") handles information in connection with the Android mobile application (package name: `com.basicorganizer.measurements`).
 
-Basic Measurements is designed to keep everything you enter **on your own device**. The app has no account, no server, no cloud storage, no analytics, and no advertising. The app does **not** request Internet access. **Your weight, body measurements, and personalization details never leave your device** unless you personally choose to share them (for example, by exporting a file yourself, or by sending us a feedback email).
+**Basic Measurements stores information you enter locally on your device. The developer does not receive or have access to that information through the app.** Optional backups, optional export, optional reminders, and voluntary emails are described separately below.
+
+This policy covers the Basic Measurements Android application published by Basic Organizer. It does not govern Google Play, email providers, Google's backup systems, device manufacturers, or other third-party services. Those parties have their own policies.
+
+Basic Organizer develops and maintains the app as an independent project. The application does not operate developer-run servers. Weight, body measurements, personalization details, or other content you enter is **not transmitted by the app** to Basic Organizer or to any server operated by Basic Organizer. This document is provided for transparency and does not constitute legal advice.
 
 ## Developer Information
 
-**App Name:** Basic Measurements  
-**Package name:** `com.basicorganizer.measurements`  
+**App Name:** Basic Measurements (device label: Measurements)  
 **Developer:** Basic Organizer  
-**Contact Email:** basicorganizer.post@gmail.com
+**Contact Email:** basicorganizer.post@gmail.com  
+**Distribution:** Google Play Store
+
+**Note:** This app is developed and maintained as an independent project. While we strive to provide reliable service and support, response times and feature development may vary based on available resources.
 
 ---
 
-## Health and Informational Disclaimer
+## Not Medical Advice; Informational Tracking Only
 
-Basic Measurements is intended for **personal tracking and rough orientation only**. This app is **not a medical device** and is **not intended to diagnose, monitor, treat, cure, or prevent any disease or medical condition**. It is **not** a medical service, diagnostic service, treatment service, or clinical monitoring service. Nothing in the app should be considered medical advice.
+Basic Measurements is a personal tool for logging body weight and body measurements, viewing on-device statistics (including BMI and waist-to-hip ratio), and optionally setting reminders. It is **not a medical device**, healthcare service, diagnostic tool, treatment tool, or clinical monitoring service, and it does **not** provide medical, fitness, nutritional, or professional advice.
 
-**Always consult a qualified healthcare professional regarding health-related decisions.** Do not rely on this app for urgent or emergency situations.
+**Do not rely on this app for medical diagnosis, treatment decisions, urgent care, emergency situations, or any other health-related decision that requires a qualified professional.**
 
-Calculated values such as BMI and waist-to-hip ratio are provided for informational purposes only. They are **mathematical estimates** based on the information you enter and should **not** be considered medical advice or an assessment of your health. They do not fully reflect muscle mass, fat distribution, pregnancy, or overall health.
+Calculated values such as BMI and waist-to-hip ratio, and statistics, graphs, trends, category labels, and similar summaries, are automatically generated estimates based only on the information you enter and on simple local algorithms. They may be incomplete, inaccurate, or unsuitable for decision-making — especially with incomplete logging, atypical body composition, pregnancy, illness, or other factors. They do **not** fully reflect muscle mass, fat distribution, or overall health.
 
-Statistics, graphs, trends, category labels, and similar summaries are generated automatically from the information you enter and may contain inaccuracies if the entered information is incomplete or incorrect. They are **not** clinical assessments or diagnoses.
+Users should not rely on the app as their only means of remembering weigh-ins, measurements, appointments, medications, or other time-sensitive matters. If you have concerns about your health, weight, or body composition, consult an appropriately qualified healthcare professional.
 
-You use the app and any information it displays at your own discretion and risk. You are solely responsible for any decisions made based on information in the app.
+The app is not intended to replace professional advice, diagnosis, treatment, or emergency services.
 
----
-
-## Sensitive Personal / Health Information
-
-Information you enter into Basic Measurements — including body weight, body circumferences, height, date of birth, sex, and derived values such as BMI or waist-to-hip ratio — may be considered **personal data** and, in many jurisdictions, **sensitive personal information** / **special category data** related to **health**.
-
-This information remains stored **only on your device** and is **never transmitted to the developer** or to any third party by the app.
-
-Such information is used **solely** to provide logging, on-device calculations and charts, reminders, export, and other features within the app. It is **never** used for advertising, profiling, analytics, marketing, or sold or shared with anyone.
-
-Basic Measurements does **not** use artificial intelligence or external services to analyze your measurement data. All processing happens locally on your device.
-
-Basic Measurements is **not** a healthcare provider, health insurer, or other entity covered by the U.S. Health Insurance Portability and Accountability Act (HIPAA), and this policy is not a HIPAA notice.
+This app is not provided as part of a HIPAA-covered healthcare service, and this Privacy Policy is not a HIPAA Notice of Privacy Practices.
 
 ---
 
-## Information We Collect
+## Health and Sensitive Information
+
+Information you enter into Basic Measurements — including body weight, body circumferences, height, date of birth, sex, and derived values such as BMI or waist-to-hip ratio — may be considered **sensitive personal information** or health-related information under certain laws (including special-category data under GDPR / UK GDPR where applicable).
+
+This information is stored **locally on your device** by default and is **not transmitted by the app** to Basic Organizer or to any server operated by Basic Organizer. Optional backup and export features can create copies outside the app's private storage, as described below. Optional reminders may display measurement-related text on the device notification shade when enabled and permitted by the system.
+
+The app uses this information locally to provide logging, on-device calculations and charts, personalization, optional reminders, optional export, and related functionality. It may also be included in optional backups enabled by the user, in export files the user creates, or in communications the user voluntarily sends to the developer. **Basic Organizer does not use this information for advertising, profiling, analytics, or marketing**, and does not sell it or share it with third parties for those purposes.
+
+Basic Measurements does **not** use artificial intelligence or external cloud services to analyze your measurement data. Calculations and statistics run **locally on your device**.
+
+Users are responsible for the information they choose to enter, including whether it is appropriate to store on their device or in any backup or export location. Users should not use the app to store information that they are legally prohibited from storing, information belonging to another person without appropriate authorization, passwords, authentication credentials, financial credentials, or other information requiring a level of security that the app does not provide.
+
+---
+
+## No Emergency or Safety-Critical Use
+
+Basic Measurements is not designed or intended for emergency communications, emergency notifications, safety monitoring, crisis detection, medical-alarm delivery, or other safety-critical purposes. Optional reminders should not be relied upon to identify emergencies or to notify others when assistance may be required.
+
+---
+
+## Information Stored in the App
+
+In this policy, "stored" means information kept in the app's local storage on the device for the app to function. That is **not** the same as information being received, accessed, or collected by Basic Organizer. Unless this policy expressly says otherwise (for example optional backups, export, or a voluntary email), Basic Organizer does not receive that information.
 
 ### Data Stored Locally
 
-All user data is stored **locally on your device**. Depending on how you use the app, this may include:
+Application data required for ordinary operation is stored **locally on the device**:
 
-- **Weight entries:** Body-weight values you enter, with dates and (for same-day entries) optional times.
-- **Body measurements:** Circumference values you enter for waist, hips, chest/bust, upper arm, and thigh, with dates.
-- **Personalization details (optional):** Sex, date of birth, and height, used on-device for features such as BMI estimates and age-aware category labels where applicable.
-- **Reminder preferences:** Whether reminders are enabled, and the frequency, time, and weekday you choose.
-- **App preferences:** Settings such as language, theme, units (metric/imperial), and date/time formats.
+- **Weight entries:** Body-weight values you enter, with dates and (for same-day entries) optional times
+- **Body measurements:** Circumference values you enter for waist, hips, chest/bust, upper arm, and thigh, with dates
+- **Personalization (optional):** Sex, date of birth, and height, used on-device for features such as BMI estimates and age-aware category labels where applicable
+- **Reminder preferences:** Whether reminders are enabled, and the frequency (daily or weekly), time, and weekday you choose
+- **App preferences:** Language (including system default); theme (light / dark / system); units (metric / imperial); date and time formats; and backup choices (including the backup folder selected, if any)
 
-This information is stored in a local database and local app preferences on your device. It is **not transmitted to any external servers, to the developer, or to any third parties**. We have **no ability to see, access, or recover** the data you enter into the app.
+This information is stored in a local SQLite database and in app-private SharedPreferences. The app does **not** transmit it to Basic Organizer or to any server operated by Basic Organizer. Optional backup and export features can create copies of some of this data outside the device, as described below.
 
-### Optional Export Created by You
+### Optional reminders
 
-You may choose to **export** your weight and body-measurement entries to a text file (optionally including a statistics summary). That file is created **only when you request it**. The app then opens your device’s system share sheet so **you** can save or send the file using apps or locations you choose.
+Reminders to note measurements are **optional**. They can be turned on or off in **Reminders**. When enabled and the system allows notifications, the app may schedule a **local** daily or weekly reminder at the time you choose.
 
-Once you export a file, that copy is under **your** control. **Once exported, files are no longer protected by the app and are subject to the security of the location where they are stored.** Exported files may contain sensitive health-related information. The app does not upload exports to the developer. If you store or share an exported file outside the app (for example in cloud storage, messaging, or email), that is outside the app’s control and subject to the policies of those services or recipients.
+Reminder text may include wording about logging weight or body measurements. **Notification content is not transmitted by the app to Basic Organizer or to any server operated by Basic Organizer.**
 
-### Future Features
+On Android 13 and later, the app declares the **POST_NOTIFICATIONS** permission. Saving reminder settings may prompt for that permission where required. If permission is denied, or if notifications are blocked in system settings, reminders may not appear even though the in-app reminder switch remains on.
 
-The app currently does not collect information off your device. If future versions introduce features that require collecting or transmitting information — or that add categories of health-related information you enter (for example nutrition or exercise information entered by the user) — this Privacy Policy will be updated **before** those features become available. Any feature involving sensitive personal information would require your **explicit opt-in consent**.
+Where required by Android, the app may also use exact-alarm scheduling so reminders can fire closer to the time you chose. Exact-alarm capability depends on system settings and may be restricted by the device.
 
-### Data We Do Not Collect
+After a device restart or app update, the app may reschedule the next reminder locally. Delivery can be affected by Do Not Disturb, battery optimization, Doze mode, manufacturer-specific power management, timezone changes, or other system settings outside the developer's control. **Reminders are not guaranteed to fire at the exact intended moment, or at all.**
 
-We do not collect or store on any external server:
+Tapping a reminder opens the app. The current version is not designed to send notification events to advertising, analytics, or crash-reporting services.
 
-- Your weight entries, body measurements, height, date of birth, sex, BMI estimates, waist-to-hip ratio estimates, or other health-related entries
-- Personal identification information (name, email, phone number)
-- Precise or approximate location data
-- Contact information
+### Optional backups
+
+Backup is **optional**. In the app, both Google Backup and folder backup are **off by default** until switched on in **Backup & Restore**. Either option, both, or neither may be used.
+
+Because measurement data may include sensitive health-related information, users should consider carefully whether to enable backups and where folder backup files are stored.
+
+**Google Backup**
+
+- The app allows Android backup (`allowBackup`). A custom full-backup agent is designed to include the measurements database and related backup-preference files only when the in-app Google Backup option is switched on; if that option is off, the agent is designed to back up nothing through that cloud-backup path. (Key/value backup APIs are unused.)
+- Measurement data is added to Google Backup only when the Google Backup option is switched on in **Backup & Restore** *and* Google Backup is enabled in device settings. When included, that backup **may contain**:
+  - The measurements SQLite database (weight entries and body-measurement entries)
+  - Backup preference settings (such as opt-in flags and, if folder backup was configured, the chosen folder location)
+- Personalization and other general app preferences (for example height, date of birth, sex, theme, language, units, date/time formats, and reminder schedule) are **not** currently included in the Google Backup path described above. They remain in local app preferences on the device unless you re-enter them after reinstall.
+- That backup is handled by Google under [Google's Privacy Policy](https://policies.google.com/privacy), not by the Basic Measurements developer. **The developer does not receive, access, or host that data.** Google operates and controls its backup service, including its applicable security, retention, restoration, and deletion mechanisms. Those practices are governed by Google's applicable policies and settings. **Basic Organizer does not control those mechanisms.**
+- The option may be turned off in the app at any time. Turning it off stops the app from adding measurement data to later backups that use the Android cloud backup system. Copies already stored by Google remain until deleted in Google account or device backup settings.
+
+**Device transfer and manufacturer tools**
+
+- The app's Google Backup switch is designed to control what the app includes in **cloud** backups that use the Android backup agent described above. It does **not** necessarily control every Android or manufacturer copy, transfer, cloning, or migration path.
+- Android device-to-device transfer and similar manufacturer tools may copy application data according to the app's declared data-extraction rules and according to the manufacturer's own settings and policies. Those paths can include the measurements database and related backup-preference files even when the in-app Google Backup switch is off.
+- The developer does not control third-party device backup, migration, cloning, synchronization, restoration, or transfer mechanisms. Such mechanisms may copy, retain, modify, omit, or otherwise process application data independently of the app's own backup settings.
+
+**Folder backup**
+
+- Only when switched on and a folder is chosen with the system file picker (for example a folder on the device, or in the user's own cloud storage).
+- When folder backup is enabled, a backup file is written promptly, then about once a day (the schedule may be delayed if the battery is low). The app attempts to keep the **5 most recent** backup files it created in that folder and may delete older backup files it created when a new one is written.
+- The backup file is a **plain-text JSON file** containing weight entries and body-measurement entries, plus backup metadata (such as format version, app label, and export time). **Personalization and other app preferences are not currently included in the folder backup JSON.** The folder backup file is **not encrypted by the app**. Anyone with access to that folder can read its contents, which may include sensitive health-related information. The folder should be chosen accordingly.
+- Files are written only to the location chosen by the user. **The developer does not receive, access, or host those files.** If the folder is in a cloud service, that service's own privacy policy and terms apply.
+- Restoring from a backup **replaces** the weight and body-measurement data currently in the app.
+- Folder backup may be turned off at any time. Turning it off stops further automatic writes. Existing backup files remain in the folder until the user deletes them.
+
+**User responsibility for backups**
+
+Users are responsible for deciding whether to enable backups and where folder backup files are stored. Because folder backup files are not encrypted by the app and may contain sensitive health-related information, users should choose a storage location they consider appropriate. The developer does not control third-party storage locations (including cloud folders) and cannot guarantee their security or availability. **The developer cannot control or verify the security, privacy, availability, retention, deletion, or backup practices of any storage provider or location selected by the user.** Nothing in this section limits rights or remedies that cannot be excluded under applicable law.
+
+### Optional export created by you
+
+You may choose to **export** your weight and body-measurement entries to a text file (optionally including a statistics summary). That file is created **only when you request it**. The app then opens your device's system share sheet so **you** can save or send the file using apps or locations you choose.
+
+If you include statistics, the export may also contain derived values such as weight ranges, BMI estimates (when height is set), and waist-to-hip ratio. A temporary copy of the export file may be created in the app's private cache so the system share sheet can open it.
+
+Once you export a file, that copy is under **your** control. **Once exported, files are no longer protected by the app and are subject to the security of the location where they are stored.** Exported files may contain sensitive health-related information. The app does not upload exports to the developer. If you store or share an exported file outside the app (for example in cloud storage, messaging, or email), that is outside the app's control and subject to the policies of those services or recipients.
+
+### Feedback emails
+
+The app does not send messages to the developer on its own. If **Feedback** is used, the device email application is opened with a message prepared for the user. To assist troubleshooting, that message is pre-filled with:
+
+- Device manufacturer and model
+- Android version (SDK level)
+- The Basic Measurements version in use (in the email subject)
+
+Nothing is sent unless the message is sent from the user's own email application. The contents may be edited or deleted first. When a message is sent, the developer receives the sender's email address, the message, and anything else included (which may include measurement or health content if the sender pastes it). Correspondence is used only to respond to the request and to resolve related issues, is not used for marketing, and is retained only for as long as reasonably necessary for those purposes. Deletion of correspondence may be requested using the contact details below. Email is delivered through the sender's and the developer's mail providers, which have their own policies.
+
+### Permissions
+
+The app declares the following permissions. None of them are used by the app to transmit measurement content to Basic Organizer or to any server operated by Basic Organizer.
+
+- **POST_NOTIFICATIONS (Android 13+):** Used to display optional local measurement reminders when the user has enabled reminders and system notification permission is granted.
+- **SCHEDULE_EXACT_ALARM:** Used to deliver reminders closer to the times you choose, where required and allowed by Android.
+- **RECEIVE_BOOT_COMPLETED:** Used to reschedule the next local reminder after the device restarts or the app is updated.
+- **VIBRATE:** Used for optional notification feedback where supported by the device.
+
+**The app does not transmit measurement data to Basic Organizer or to a developer-operated server.** The app's application code is designed not to upload measurement data to Basic Organizer or a developer-operated server. As supporting evidence of that design, the app does **not** declare the Android **INTERNET** permission.
+
+AndroidX WorkManager and other bundled Android components may contribute system permissions required for background scheduling (for example for folder backup). Some of these permissions can include `WAKE_LOCK`, `FOREGROUND_SERVICE`, or `ACCESS_NETWORK_STATE`. Their presence does not mean that Basic Measurements uploads measurement data to the developer or to a developer-operated server. Folder backup scheduling is handled by WorkManager and may continue after reboot according to Android's background-work behavior; the app may also re-schedule folder backup when opened if that option is still enabled.
+
+Choosing a backup folder or exporting a file uses Android's system file picker / share sheet, which grants access only to the location selected. The app does not request broad storage access. Opening an external link (for example the developer page on Google Play via **More apps**) uses the system to launch another application; it does not grant this app network access for uploading measurement data.
+
+### Third-Party Services
+
+The current version of the app contains **no advertising, no analytics, no advertising trackers, no crash-reporting service, and no user accounts**. The libraries it uses (AndroidX and Google Material components) provide user-interface and scheduling functions. They are not used by the developer to collect user data.
+
+If this ever changes, this policy and the app's Data safety information on Google Play will be updated before the change is released, and consent will be requested where the law requires it.
+
+The following user-initiated actions involve third parties not controlled by Basic Organizer:
+
+- **Feedback:** Opens the device's email application as described above. Transmission of any message is governed by the email providers' policies.
+- **Export share sheet:** Opens apps or locations you choose. Those parties process the exported file under their own policies.
+- **More apps / developer page on Google Play:** Opens Google Play or a browser. Data processing by Google is governed by [Google's Privacy Policy](https://policies.google.com/privacy).
+- **Google Play distribution:** Installation, updates, ratings, and store interactions involve processing by Google as store operator.
+- **Optional Google Backup:** If enabled, device backup that uses the Android cloud backup system is processed by Google as described above.
+- **Device transfer / manufacturer tools:** May process app data as described under Device transfer and manufacturer tools above.
+
+### Information the Developer Does Not Receive Through the App
+
+The developer does not operate servers for this app. Through ordinary use of the app, the following are **not transmitted by the app** to Basic Organizer or to any server operated by Basic Organizer:
+
+- Weight entries, body measurements, height, date of birth, sex, BMI estimates, waist-to-hip ratio estimates, or other health-related entries
+- Statistics, charts, reminder text, or export content
+- Precise location data
+- Contact lists
 - Photos, media, or data from other apps
-- Advertising identifiers or analytics identifiers
-- Biometric templates (fingerprints, face data, etc.)
+- Advertising identifiers or usage analytics
 
-The only time your email address becomes visible to us is if **you choose** to contact us or send feedback by email (see "Feedback and Support Emails" below).
+Google Play, Google Backup, email providers, Android, and device manufacturers may process information in connection with their respective services under their own policies. The developer does not control those services.
 
----
-
-## Permissions
-
-Basic Measurements may request the following Android permissions, used only for the purposes described:
-
-| Permission / capability | Purpose |
-|---|---|
-| **Notifications** | To show optional measurement reminders you schedule. |
-| **Exact alarms / schedule exact alarm** | To deliver reminders at the times you choose, where required by Android. |
-| **Boot completed** | To reschedule your reminders after the device restarts or the app is updated. |
-| **Vibrate** | For optional notification feedback where supported. |
-
-These permissions are used **locally on your device**. They are **not** used to collect or transmit your measurement data. You can decline notification or alarm-related permissions; reminders that depend on them will not work until granted. Reminders are entirely optional.
-
-The app does **not** require Internet permission and is designed to work offline for its core tracking features.
+**User-initiated email is different:** if the user chooses to email the developer (for example through **Feedback**), the developer necessarily receives the email address and whatever is written, as described above. Names, email addresses, and telephone numbers are not otherwise received by the developer through the app.
 
 ---
 
 ## How We Use Your Information
 
-- Your measurement data and settings remain **local to your device** and are used solely to provide logging, charts, on-device estimates (such as BMI), reminders, personalization, export, and related features to you.
-- No content you enter is shared, sold, or used for advertising, analytics, profiling, or marketing.
-- We do not build user profiles and do not process your data for any purpose beyond running the app on your device.
-
----
-
-## Feedback and Support Emails
-
-The app includes an optional "Feedback" option that opens your own email application so you can contact the developer voluntarily.
-
-- If you send feedback, we receive the contents of your email, your email address, and any basic technical details you choose to include (such as the app version, device model, and Android SDK level, which help with troubleshooting).
-- We use this information **only** to respond to and address your inquiry.
-- Sending feedback is entirely optional. Weight entries, body measurements, and personalization details are **not** attached automatically.
-
-Please do not include sensitive personal or health content in feedback emails unless it is necessary for your request and you are comfortable sharing it.
+- Measurement data and application preferences remain **local to the device**, unless a backup, export, or device-transfer path is used as described above.
+- Measurement content is not used for advertising or analytics, and is not transmitted **by the app** to Basic Organizer or to any server operated by Basic Organizer, except if the user includes it in an email.
+- When Google Backup or folder backup is enabled, measurement data may be copied as described above. Separate manufacturer transfer tools are described in the backup section.
+- When reminders are enabled and system permission allows it, reminder scheduling and notifications occur locally on the device.
+- Voluntary email is used only to respond to support inquiries and to resolve related issues.
+- Personal information is **not sold**. Personal information is **not shared** for cross-context behavioral advertising.
 
 ---
 
 ## Data Security
 
-- **Local Storage:** The app is designed to keep information stored locally on your device.
-- **No Transmission by the App:** The app does not send your measurement or personalization data off your device.
-- **No Automatic Backup:** The app disables automatic cloud backup and device-transfer of its data (`android:allowBackup="false"`, with backup and data-extraction rules configured to exclude the app’s data). This helps keep sensitive health-related content from being copied automatically by system backup tools.
-- **Device Security:** Because your data lives on your device, its protection depends on your device’s own security features. We recommend enabling a screen lock and device encryption, keeping your device updated, and not sharing your unlocked device with others.
+- **Local Storage:** Measurement data is stored in a local SQLite database and app-private preferences. Other apps cannot read that storage in ordinary Android use. They may be readable on a rooted or compromised device, or by someone with physical access to an unlocked device.
+- **No upload by the app:** The app's application code is designed not to upload weight, body-measurement, or personalization content to Basic Organizer or a developer-operated server. As supporting evidence of that design, the app does not declare the Android INTERNET permission.
+- **Optional backup:** Measurement data is added to Google cloud backup (via the Android backup agent) or written as a folder backup only after the corresponding option is enabled in the app. Device-transfer paths are described separately above.
+- **Backup files are not encrypted by the app:** A folder backup is a readable JSON file in the chosen location. Anyone with access to that folder or that cloud account can read it, including sensitive health-related information if present. Google Backup is handled by Google under Google's own systems and policies. The developer does not control those systems.
+- **Reminders:** Reminder scheduling and notifications are processed locally. Their reliability depends on device settings and system behavior.
+- **Device Security:** Data security also depends on the device's own protections (screen lock, device encryption, and who has access to the device).
+- The app is provided by an independent developer and cannot guarantee absolute security.
 
-No method of electronic storage is completely secure. **The developer cannot recover deleted information, or data lost due to device failure, reset, loss, theft, damage, or app removal.** You are responsible for any backups you choose to make (for example, via the in-app export feature).
+---
+
+## Data Preservation
+
+The developer does not guarantee that measurement data will remain available indefinitely. Data may be lost or become inaccessible due to device failure, operating-system changes, application errors, accidental deletion, uninstallation, storage failure, backup failure, restoration of an earlier backup, device replacement, missed or blocked reminders, or other circumstances outside the developer's control.
+
+Users are responsible for enabling and maintaining backups if they require copies of their data.
 
 ---
 
 ## Children's Privacy
 
-- The app does not require accounts and stores all information locally.
-- The app does not knowingly collect personal information from children.
-- Basic Measurements is intended for a general audience of users who can manage their own personal tracking. It is **not directed at children under 13** (or the equivalent minimum age in your country). If you are a parent or guardian and believe a child has provided personal information to us by email, contact us and we will delete that correspondence where applicable.
-- Any future advertising or online features will comply with applicable child-safety standards such as COPPA and local law.
+- Basic Measurements is intended for people who wish to track personal body measurements. The app is **not directed at children** and is not marketed to children.
+- The app is not age-restricted or age-gated. It contains no advertising and no features designed to appeal specifically to children.
+- Measurement data stays on the device and is not transmitted **by the app** to Basic Organizer or to any server operated by Basic Organizer through ordinary use of the app. The only way information can reach the developer is if someone chooses to send an email.
+- The developer does not knowingly collect personal information from children in circumstances where applicable law requires parental consent or otherwise restricts such collection. If it is believed that a child has sent personal information by email, contact the address below and it will be deleted.
 
 ---
 
 ## Data Retention and Deletion
 
-- All data stays on your device for as long as you keep it there.
-- You can edit or delete individual weight entries and body-measurement entries at any time within the app.
-- You can change or clear reminder and personalization settings at any time.
-- **Uninstalling the app removes all locally stored data** associated with it.
-- There is **no server-side storage**, so there is no separate copy of your data for us to retain or delete.
-- Exported files you previously saved or shared outside the app are not deleted by uninstalling; you must delete those files yourself if desired.
+- Individual weight entries and body-measurement entries may be deleted within the application at any time.
+- Personalization and reminder settings may be changed or cleared within the application at any time.
+- Uninstallation of the application removes locally stored app data under standard Android behavior. **Backups and exports already made are not removed by uninstalling:**
+  - Folder backups remain in the chosen folder until the files are deleted (while folder backup is on, the app attempts to keep the 5 newest backup files it created).
+  - Google Backup data remains in the Google account until deleted in device or Google account backup settings.
+  - Exported files previously saved or shared outside the app remain until the user deletes them.
+- The developer does not operate server-side measurement storage.
+- Feedback correspondence is retained only for as long as reasonably necessary to respond to the request and resolve related issues. Deletion of correspondence may be requested using the contact details below.
 
 ---
 
-## Your Rights and Control
+## User Rights
 
-You have full control over your data at all times. You can access, modify, and delete your entries directly within the app, and you can remove all app data by uninstalling the app.
+- Access, modify, and delete measurement data through the application.
+- Copy measurement data by using folder backup (JSON) or the in-app export feature (text file).
+- Opt in or out of optional backup features at any time in Backup & Restore.
+- Enable or disable reminders in Reminders, and control notification permission and alarm-related settings in system settings.
+- Users in the EEA and United Kingdom may have rights under GDPR / UK GDPR (access, rectification, erasure, portability, objection, complaint to a supervisory authority), including rights relating to special-category / health data where applicable.
 
-Because we do not collect or hold your personal data on any server, most data-subject requests can be fulfilled entirely by you, on your device. Depending on where you live, you may have rights under laws such as the GDPR (EEA/Norway), the UK GDPR, or the CCPA/CPRA (California), including rights of access, correction, deletion, and objection, and the right not to have personal information sold or shared. We do not sell or share your personal information.
+**Who is responsible (GDPR / UK GDPR).** Measurement data stays on the device and is not received by the developer through the app, so the developer cannot access, export, or delete measurement data on the user's behalf — that control is exercised directly in the app. Requests concerning locally stored measurement data can generally be fulfilled directly by deleting the data within the app or removing the app, rather than by contacting the developer. For information voluntarily provided by email, the independent developer who publishes this app under the name Basic Organizer (contact below) acts as the data controller and processes that information only as necessary to respond to the inquiry and manage related support. The applicable legal basis under Article 6 GDPR / the corresponding UK GDPR requirements depends on the circumstances. Where the information includes special-category personal data, processing will additionally rely on an applicable condition under Article 9 GDPR / the corresponding UK GDPR requirements where required (this Privacy Policy is not itself consent; see Privacy Policy Notice below).
 
-If you have contacted us by email and would like that correspondence deleted, you may request this at the address below.
+**California (CCPA/CPRA).** To the extent the California Consumer Privacy Act, as amended, applies to Basic Organizer, personal information is not sold and is not shared for cross-context behavioral advertising, and is not used to build profiles. California residents may exercise applicable rights by contacting the address below. There is no discrimination for doing so. The categories of sensitive personal information that may be stored locally by the app, and the circumstances in which information may leave the device through user-enabled backups, exports, device transfer, or voluntary communications, are described in this policy.
 
----
+Privacy requests: **basicorganizer.post@gmail.com** (subject: "Privacy request - Basic Measurements"), including the nature of the request, jurisdiction, and relevant particulars. GDPR-related requests will be answered within one month where required, with extension by up to two further months where permitted for complex cases.
 
-## Third-Party Services
+### Right to Erasure ("Right to be Forgotten")
 
-Core tracking features do not rely on third-party analytics, advertising, crash-reporting, or cloud backends operated by the developer.
-
-When you use optional system features (for example, sharing an export through another app, or opening your email app), those features are provided by your device manufacturer, operating system, or apps you choose. Their handling of information is governed by their own policies.
-
----
-
-## International Users
-
-The app processes data locally on your device regardless of your country. If you contact us by email, your message may be processed in the country where the developer or the email provider operates. By contacting us, you understand that your message will be handled in order to respond to your inquiry.
+- Individual weight or body-measurement entries may be deleted within the application
+- The application may be uninstalled to remove local app data
+- Backup may be turned off, and backup files, device backups, or exports that are no longer wanted may be deleted
+- The developer may be asked to delete any email correspondence that has been sent
+- Because the developer does not hold measurement data or user accounts, there is no developer-held measurement database to delete. Requests concerning locally stored measurement data can generally be fulfilled directly by deleting the data within the app or removing the app. Any personal information contained in support correspondence can be handled as described in the Feedback emails and Data Retention sections.
 
 ---
 
 ## Changes to This Privacy Policy
 
-- Updates will be reflected by the "Last Updated" date at the top of this policy.
-- Users will be informed of material changes via app updates or in-app notices where appropriate.
-- Continued use of the app after changes take effect means you acknowledge that you have read the updated Privacy Policy.
+- Updates will be reflected in the "Last Updated" date.
+- Material changes will be described in app updates or by in-app notice where practicable.
+- If the user does not agree with an updated policy, the application should not continue to be used and may be uninstalled. This policy is a notice of practices; it is not a substitute for rights that cannot be waived under applicable law.
 
 ---
 
-## How This Policy Applies
+## Legal Compliance
 
-This Privacy Policy is intended to describe how the app currently handles information. Where applicable, it is designed to reflect the principles of privacy laws such as the GDPR, UK GDPR, CCPA/CPRA, COPPA, and the Google Play Developer Policies (including User Data and Health apps requirements). Any optional features added in the future will be described in an updated policy **before** they become available.
+This policy is intended to describe the app's current data practices and has been drafted with commonly applicable privacy and platform requirements in mind, including:
 
-This Privacy Policy does **not** create a contract for professional or medical services, and it is not legal advice to you.
+- **GDPR (EEA) and UK GDPR**
+- **CCPA/CPRA (California, USA)**
+- **COPPA (Children)**
+- **Google Play Developer policies**, including Google Play's User Data policy and Health Apps policy, as applicable to the app's health-related functionality
 
----
+This is not a certification of compliance with every requirement of every jurisdiction. Laws and store rules change, and an independent developer cannot guarantee that every scenario is covered.
 
-## Limitation of Liability
+The developer does not receive measurement data through the app. For information voluntarily sent by email, the applicable legal basis is determined as described under User Rights.
 
-To the maximum extent permitted by applicable law, the developer shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use of, inability to use, or reliance upon the app or its features.
-
-This includes, but is not limited to:
-
-- Any medical, health, fitness, or personal decision or outcome
-- Decisions made based on weight trends, BMI calculations, body measurements, statistics, graphs, trends, category labels, or other information displayed by the app
-- Inaccurate or incomplete estimates, calculations, charts, or statistics (including BMI and waist-to-hip ratio)
-- Missed, delayed, or undelivered reminders
-- Data loss, corruption, unauthorized access on your device, device failure, theft, or uninstall
-- Any use of exported files after they leave the app
-
-Some jurisdictions do not allow certain limitations of liability. In those places, liability is limited to the fullest extent permitted by law.
-
----
-
-## Disclaimer
-
-The app is provided "as is" and "as available", without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, and non-infringement, to the maximum extent permitted by law.
-
-The app is designed to keep your information stored locally on your device. We cannot guarantee uninterrupted service, absolute security, or the accuracy of estimates, statistics, graphs, or trends. We cannot guarantee that reminders or notifications will be delivered at a particular time or at all on every device or Android version. The app does not provide medical advice and must not be used as a substitute for professional care. You are responsible for maintaining appropriate device security measures, for managing any exports you create, and for any decisions you make based on information in the app.
-
-## Acknowledgement
-
-By using Basic Measurements, you acknowledge that you have read this Privacy Policy. If you do not agree, please do not use the app.
+International transfer: measurement databases are not transferred to developer servers. Email may be processed in jurisdictions where the mail providers operate (which may include countries outside the user's home country).
 
 ---
 
 ## Contact Us
 
 **Email:** basicorganizer.post@gmail.com  
-**Developer:** Basic Organizer
+**Published under the name:** Basic Organizer
 
-**Response Time:**  
-We will make reasonable efforts to respond to inquiries in a timely manner. We will respond to applicable legal requests within the time required by applicable law.
+**Response Time:**
+Reasonable efforts will be made to respond to inquiries in a timely manner. For users in the European Economic Area (EEA) and the United Kingdom, GDPR-related requests will be answered within one month as required by law, and may be extended by up to two further months where necessary, taking into account the complexity and number of requests.
 
-For other inquiries, we aim to respond as quickly as possible, but response times may vary.
+For other inquiries, responses will be provided as promptly as practicable; timing may vary.
 
 When contacting us, please include:
-- Your concern or request
-- Your location (to ensure we apply the correct privacy laws)
-- Any relevant details to help us assist you
+- The concern or request
+- Location (jurisdiction), to apply appropriate privacy law
+- Relevant details to facilitate handling
+
+---
+
+## Disclaimer
+
+The app and this Privacy Policy are provided "as is" without warranties of any kind. Reasonable efforts are made to protect data and to describe practices accurately; uninterrupted service, accurate calculations, timely reminders, or absolute security cannot be guaranteed. Device security, backups, exports, notification settings, and content entered into the app remain the responsibility of the device owner.
+
+The app may calculate, display, summarize, or otherwise present measurement-related information based on data entered by the user. Such information may contain errors, omissions, inaccuracies, or limitations and should not be treated as a guarantee of accuracy. **Do not rely on BMI, waist-to-hip ratio, charts, or trends as medical advice.** The developer is not responsible for decisions, actions, outcomes, or consequences resulting from reliance on information recorded, calculated, displayed, or notified by the app (including missed, delayed, or inaccurate reminders or estimates).
+
+To the maximum extent permitted by applicable law, the developer shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use of, inability to use, or reliance upon the app or its features, including medical or fitness decisions, inaccurate estimates or statistics, missed reminders, data loss, device failure, or use of exported or backup files after they leave the app. Some jurisdictions do not allow certain limitations of liability; in those places, liability is limited to the fullest extent permitted by law.
+
+---
+
+## Privacy Policy Notice
+
+This Privacy Policy is a notice of the app's privacy practices. It is not, by itself, a request for or a record of consent. Where applicable law requires consent for a particular processing activity (for example showing notifications or enabling backups), that consent is obtained through the relevant system or in-app control, not merely by reading this policy.
 
 ---
 
 **Summary:**
-- ✓ Your weight, body measurements, and personalization data stay on your device
-- ✓ No account. No cloud. No server. No analytics. No advertising. No Internet permission.
-- ✓ Nothing you enter is sent to the developer or any third party by the app
-- ✓ Reminders, notifications, and alarms are used only on-device for features you enable
-- ✓ Automatic cloud backup and device transfer of app data are disabled
+- ✓ Measurement data stays on the device — the app does not declare internet permission and the developer does not operate servers for this app
+- ✓ Weight, body measurements, and personalization are not transmitted by the app to Basic Organizer or a developer-operated server; user-enabled backups, exports, and voluntary emails are separate
+- ✓ No ads, analytics, advertising trackers, or accounts in the current version
+- ✓ No AI or cloud services analyze health information; calculations run locally
+- ✓ Google Backup and folder backup are optional; both in-app switches start off
+- ✓ Folder backup files are readable JSON (weight and body measurements) — keep them somewhere trusted
+- ✓ Restore from folder backup replaces the measurement data currently in the app
+- ✓ Phone-to-phone / manufacturer transfer may copy app data under system rules, separately from the Google Backup switch
+- ✓ Optional local measurement reminders; not guaranteed; not for emergencies
 - ✓ Optional export is user-initiated; once exported, files are no longer protected by the app
-- ✓ You have full control: edit or delete entries, or uninstall to erase all app data
-- ✓ Not a medical device — BMI and similar values are informational mathematical estimates only
-- ✓ Any future feature that collects or transmits data would require an updated policy and opt-in consent where required
+- ✓ Feedback emails include device model and Android version, and are sent only if the user sends them
 
+- ✓ Measurement data can be edited, deleted, or copied (folder backup / export) in the app
+- ✓ Not a medical device — BMI and similar values are informational mathematical estimates only
